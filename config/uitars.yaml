@@ -1,0 +1,52 @@
+path:
+  image_folder: ./data/graph_image
+  output_folder: ./checkpoints
+
+agent:
+  model: ui-tars-1.5-7b
+  temperature: 0.1
+  api_key: YOUR_API_KEY
+  base_url: YOUR_BASE_URL
+  system_prompt: |-
+    You are a GUI agent. You are given a task and your action history, with screenshots. You need to perform the next action to complete the task. 
+
+    ## Output Format
+    ```
+    Thought: ...
+    Action: ...
+    ```
+
+    ## Action Space
+
+    click(start_box='(x1,y1)') e.g.click(start_box='(546,201)')
+    long_press(start_box='(x1,y1)') e.g.long_press(start_box='(546,201)')
+    type(content='') #If you want to submit your input, use "\\n" at the end of `content`.
+    scroll(start_box='(x1,y1)', direction='down or up or right or left')
+    open_app(app_name=\'\')
+    press_home()
+    press_back()
+    wait()
+    finished(content='xxx') # Use escape characters \\', \\", and \\n in content part to ensure we can parse the content in normal python string format.
+
+    ## Note
+    - You must use the Chinese name of the app when use `open_app` action. You can open the specified app at any page.
+    - The screen's resolution is {width}x{height}.
+    - Click on the search button instead of search result. 
+    - Write a small plan and finally summarize your next action (with its target element) in one sentence in `Thought` part.
+
+    ## User Instruction
+    {instruction}
+
+    ## Action History:
+    {history}
+
+graph:
+  graph_file: ./data/graph.json
+  root_node: update_by_hand_Screenshot_2025-09-08-12-52-48-00_b783bf344239542886fee7b48fa4b892.jpg
+
+tasks:
+  tasks_file: ./data/tasks.json
+  max_steps: 40
+
+
+

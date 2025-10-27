@@ -1,0 +1,10 @@
+/* .chatbot-image-container img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+} */
+.chatbot-image-container img {
+    object-fit: contain;
+    width: 960px;
+    height: auto;
+}

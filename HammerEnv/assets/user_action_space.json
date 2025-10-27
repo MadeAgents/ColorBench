@@ -1,0 +1,77 @@
+[
+    {
+        "name": "answer",
+        "template": "{{\"action_type\": \"answer\", \"text\": {text}}}",
+        "prompt": "```json\n{\"text\": \"回答内容\"}\n```"
+    },
+    {
+        "name": "click",
+        "template": "{{\"action_type\": \"click\", \"x\": {x}, \"y\": {y}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "close_recents",
+        "template": "{{\"action_type\": \"close_recents\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "double_tap",
+        "template": "{{\"action_type\": \"double_tap\", \"x\": {x}, \"y\": {y}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "input_text",
+        "template": "{{\"action_type\": \"type\", \"text\": {text}}}",
+        "prompt": "```json\n{\"text\": \"输入文本\"}\n```"
+    },
+    {
+        "name": "keyboard_enter",
+        "template": "{{\"action_type\": \"keyboard_enter\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "long_press",
+        "template": "{{\"action_type\": \"long_press\", \"x\": {x}, \"y\": {y}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "navigate_home",
+        "template": "{{\"action_type\": \"system_button\", \"button\": \"Home\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "navigate_back",
+        "template": "{{\"action_type\": \"system_button\", \"text\": \"Back\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "open_app",
+        "template": "{{\"action_type\": \"open_app\", \"text\": {app_name}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "scroll",
+        "template": "{{\"action_type\": \"scroll\", \"direction\": {direction}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "swipe",
+        "template": "{{\"action_type\": \"swipe\", \"touch_xy\": {touch_xy}, \"lift_xy\": {lift_xy}}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "status",
+        "template": "{{\"action_type\": \"complete\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "wait",
+        "template": "{{\"action_type\": \"wait\"}}",
+        "prompt": "```json\n{}\n```"
+    },
+    {
+        "name": "unknown",
+        "template": "{{\"action_type\": \"unknown\"}}",
+        "prompt": "```json\n{}\n```"
+    }
+]

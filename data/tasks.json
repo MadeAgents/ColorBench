@@ -1,0 +1,5004 @@
+[
+  {
+    "task_id": 1,
+    "query": "去小红书搜索ai agent，将优化记忆管理论文转发给微信好友1，然后去百度arxiv网站搜索下载该论文pdf，将论文发送给好友1",
+    "optimal_steps": 36,
+    "app_num": 4,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-31-23-72_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-32-11-21_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-34-41-88_439a3fec0400f8974d35eed09a31f914.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-36-52-14_e39d2c7de19156b0683cd93e8735f348.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 2,
+    "query": "去小红书搜索ai agent，将优化记忆管理论文转发给小红书好友Hh源，并说“可以看看”",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-31-23-72_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-14-28-27-37_a2db1b9502c98f25523e43284b79cce6.jpg",
+          "update_by_hand_Screenshot_2025-09-08-14-30-12-82_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 3,
+    "query": "小红书搜索广州旅游攻略，将第一个分享给微信好友1并询问“最想去哪个”，等待他回复后，用小红书搜广州塔附近美食，记住第一家店名，去美团搜索该店，团一份双人套餐",
+    "optimal_steps": 31,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-41-13-80_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-53-13-46_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-55-30-23_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 4,
+    "query": "小红书搜索广州旅游攻略，将第一个分享给小红书好友Hh源并询问“最想去哪个”，然后用小红书搜广州塔附近美食，记住第一家店名，去美团搜索该店，团一份双人套餐",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-18-56-40-78_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-53-13-46_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-55-30-23_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 5,
+    "query": "小红书搜索广州旅游攻略，找到第一个，进入详情页收藏并点赞",
+    "optimal_steps": 13,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-28-19_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-28-19_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 6,
+    "query": "小红书搜索广州旅游攻略，找到第一个，将博主主页分享给微信好友1",
+    "optimal_steps": 14,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-36-08_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-52-22-09_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-53-27-51_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 7,
+    "query": "小红书搜索广州旅游攻略，找到第一个，看一下博主的粉丝与获赞与收藏数据，然后去告诉微信好友1",
+    "optimal_steps": 7,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-36-08_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-17-18-39-90_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 8,
+    "query": "小红书搜索广州旅游攻略，找到第一个，进入博主主页并关注博主",
+    "optimal_steps": 8,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-36-08_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-49-28_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 9,
+    "query": "小红书搜索广州旅游攻略，找到第一个，进入详情页，将封面图片保存至本地",
+    "optimal_steps": 10,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-51-36-08_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-55-32-80_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 10,
+    "query": "小红书搜索广州旅游攻略，找到最多点赞、图文的第一个，进入详情页",
+    "optimal_steps": 28,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-22-57-58-64_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-00-32-26-50_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 11,
+    "query": "用小红书搜广州塔附近美食，记住第一家店名，去美团团双人套餐",
+    "optimal_steps": 14,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-53-13-46_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-55-21-24_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-55-30-23_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 12,
+    "query": "小红书搜索广州旅游攻略，找到第一个，转发至朋友圈，并设置仅自己可见，配文“广州走起！”",
+    "optimal_steps": 15,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-30-35-82_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-30-48-52_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-30-59-49_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 13,
+    "query": "小红书搜索广州旅游攻略，复制第一个的链接，然后发给微信群聊好友群",
+    "optimal_steps": 7,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "copy",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-10-17-76_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-10-17-76_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-21-11-08-02_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 14,
+    "query": "小红书搜索广州旅游攻略，关注粉丝数大于80的广州旅行相关博主",
+    "optimal_steps": 10,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-15-44-25_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-15-49-39_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 15,
+    "query": "小红书搜索广州旅游攻略，去问一问让ai回复，并将生成的内容存为图片到相册",
+    "optimal_steps": 10,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-28-45-88_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-28-52-61_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-28-57-24_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 16,
+    "query": "小红书搜索广州旅游攻略，去问一问让ai回复，并将生成的内容发布笔记",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-39-24-10_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-28-45-88_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-29-03-19_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-25-22-29-07-24_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 17,
+    "query": "美团搜索新斗记广州塔，将二人餐分享给微信好友1",
+    "optimal_steps": 30,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-24-10-55-21-24_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-15-41-04-70_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "完毕",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-15-41-30-08_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 18,
+    "query": "在美团、大众点评、抖音对比新斗记广州塔双人餐的价格，然后将最便宜的一个转发分享给微信好友1",
+    "optimal_steps": 21,
+    "app_num": 4,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-15-40-58-75_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-15-40-58-75_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-17-24-04-28_3682dd3b48a02e39bdbe15157844c420.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-17-24-04-28_3682dd3b48a02e39bdbe15157844c420.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-16-54-36-42_2332cb9b27b851b548ba47a91682926c.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-16-54-36-42_2332cb9b27b851b548ba47a91682926c.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-15-41-30-08_e39d2c7de19156b0683cd93e8735f348.jpg",
+          "aiagent2_Screenshot_2025-08-28-17-25-12-29_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 19,
+    "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，配文“修猫”",
+    "optimal_steps": 24,
+    "app_num": 2,
+    "milestone": [
+      {
+        "raw_ability": "让好友发照片",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-12-11-41-44-75_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "Screenshot_2025-09-12-11-42-48-91_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "raw_ability": "选择",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-19-10-06-41-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-21-38-01-71_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 20,
+    "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，使用一键成片并配文“修猫”",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "raw_ability": "让好友发照片",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-12-11-41-44-75_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "Screenshot_2025-09-12-11-42-48-91_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "raw_ability": "生成",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-21-37-10-54_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-21-38-01-71_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 21,
+    "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，并存为草稿",
+    "optimal_steps": 30,
+    "app_num": 2,
+    "milestone": [
+      {
+        "raw_ability": "让好友发照片",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-12-11-41-44-75_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "Screenshot_2025-09-12-11-42-48-91_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "Screenshot_2025-09-19-10-52-12-53_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 22,
+    "query": "去美团搜八合里牛肉火锅，查看第一家店的双人套餐，把几个双人套餐都分享给微信好友1，分享完后让他“选一个”",
+    "optimal_steps": 16,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-15-95_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-15-95_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-36-05_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-36-05_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-55-78_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-14-55-78_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-15-36-74_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 23,
+    "query": "帮我去美团点八合里牛肉火锅的外卖，要一份干炒牛河，不要餐具",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-18-08-95_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-18-31-60_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "不要餐具",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-18-38-16_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-18-41-64_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 24,
+    "query": "去美团搜八合里牛肉火锅，查看第一家店的差评数量，把差评数量告诉微信好友1",
+    "optimal_steps": 16,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-12-31-15_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-23-14-98_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 25,
+    "query": "去美团搜八合里牛肉火锅，使用投票选店将第一家店分享给微信的“好友群”，并将投票设置为群待办",
+    "optimal_steps": 18,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-12-31-15_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-25-09-94_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-25-36-04_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-25-33-48_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 26,
+    "query": "去美团搜八合里牛肉火锅，选择第一家店，直接用高德地图导航过去",
+    "optimal_steps": 15,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-12-31-15_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-26-07-52_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "高德",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-28-43-67_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-28-53-41_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 27,
+    "query": "去美团搜索八合里牛肉火锅，将直播分享给微信好友1",
+    "optimal_steps": 33,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-21-08-41_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-21-08-41_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-07-19-21-27-97_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 28,
+    "query": "去京东、淘宝、小红书查看oppo findx8s 12GB-512GB价格，并将最便宜的一个加入购物车，然后告诉微信好友1：已加入购物车",
+    "optimal_steps": 19,
+    "app_num": 4,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-16-00-34_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-16-00-34_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-16-51-92_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-16-51-92_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-17-41-48_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-17-41-48_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-18-30-53_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 29,
+    "query": "去京东OPPO官方旗舰店，在旗舰店中搜索OPPOfindx8s，查看配置16+512GB有什么颜色，然后去告诉微信好友1",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-20-43-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-21-28-64_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-21-39-06_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-22-24-79_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 30,
+    "query": "去京东OPPO官方旗舰店，查看店铺详情中的二维码",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-20-43-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-23-54_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-28-01_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 31,
+    "query": "去京东OPPO官方旗舰店，将店铺详情页面转发到朋友圈",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-20-43-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-23-54_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-42-35_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-49-35_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 32,
+    "query": "去京东OPPO官方旗舰店，将主页分享给微信好友1",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-20-43-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "Screenshot_2025-09-12-11-07-28-86_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-12-11-07-33-70_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "Screenshot_2025-09-12-11-07-44-20_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "Screenshot_2025-09-12-11-07-44-20_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 33,
+    "query": "取消关注京东OPPO官方旗舰店",
+    "optimal_steps": 13,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-20-43-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "Screenshot_2025-09-12-11-06-07-00_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 34,
+    "query": "去淘宝买OPPOfindx8s，配置为海岛蓝、16GB+1TB（直接去购物车结算）",
+    "optimal_steps": 16,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-16-34-44_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "raw_ability": "加入购物车",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-32-32-05_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "raw_ability": "购物车选中",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-32-45-01_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-32-57-84_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 35,
+    "query": "去淘宝用识图功能识别相册里的鼠标，把推荐的第一个加入购物车并去购物车结算",
+    "optimal_steps": 25,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-35-22-47_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-35-31-15_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "raw_ability": "购物车",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-35-38-87_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-35-55-21_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 36,
+    "query": "分别去京东、小红书、新增地址“华润前海大厦B座，小A，13311112222”，并设为默认地址",
+    "optimal_steps": 31,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-41-17-42_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-41-30-05_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-44-43-96_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-45-49-65_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 37,
+    "query": "微信搜索OPPO，进入服务号查看内容，然后去京东OPPO官方旗舰店搜索微信服务号消息页最新推荐的产品，查看产品详情并下拉点击PK，将其与该服务号第二新推荐的产品PK，点击只看不同，然后将结果转发给微信好友1",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-02-01-11_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-02-28-79_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-03-15-78_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-04-48-80_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 38,
+    "query": "微信搜索OPPO并关注服务号",
+    "optimal_steps": 16,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-02-01-11_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-32-40-70_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 39,
+    "query": "帮我关注OPPO微信服务号，通过服务号查找服务网点与预约，导航到第一个内容（选择高德导航）",
+    "optimal_steps": 25,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-23-02-01-11_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-32-48-33_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-33-29-59_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-33-43-42_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 40,
+    "query": "用微信关注OPPO官方服务号",
+    "optimal_steps": 9,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-40-24-07_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-40-36-89_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 41,
+    "query": "去小红书搜索OPPO手机推荐，筛选最多点赞的一条，点击喜欢，并去京东旗舰店搜该机型",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-41-40-49_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-42-01-99_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-42-20-41_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-21-28-64_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 42,
+    "query": "将美团账号与微信账号绑定",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-50-00-21_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-52-08-21_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 43,
+    "query": "去小红书搜索“七夕就在今天”，选择图文，收藏第一条内容",
+    "optimal_steps": 34,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-55-57-58_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "选择图文",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-56-30-69_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-00-57-37-34_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 44,
+    "query": "去美团外卖，点喜茶家的两份拿铁，记得用优惠券",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-00-04-68_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-01-15-87_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-01-48-19_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-02-09-14_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 45,
+    "query": "比较一下京东和美团平台，在探唐烧烤点20串肥牛的价格，记得用券",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-11-34-84_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-11-34-84_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-11-52-45_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-13-59-71_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-13-59-71_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-15-00-13_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 46,
+    "query": "在美团购买两张探唐烧烤翻身店的到店50元优惠券",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-17-24-75_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-17-30-57_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-17-36-15_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-17-41-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 47,
+    "query": "打开美团搜探唐烧烤，记住到店第一家店的地址或者店名，用微信滴滴小程序打车过去",
+    "optimal_steps": 34,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-17-24-75_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-23-45-46_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-24-03-37_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-25-52-75_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 48,
+    "query": "京东外卖搜索探唐烧烤，点击进入第一家，点击右上角转发给微信好友1",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-11-23-99_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-29-22-87_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-29-30-28_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-29-01-29-35-11_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 49,
+    "query": "帮我分别用去哪儿旅行、美团、携程旅行搜索8月1日入住8月2日离开的上海凯宾斯基大酒店高级城景大床房价格哪个最便宜（直接从主界面搜索）",
+    "optimal_steps": 15,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-53-25-85_97d7407497855043c7c8d55fcc40710b.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-55-25-36_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-56-45-42_97d7407497855043c7c8d55fcc40710b.jpg"
+        ]
+      },
+      {
+        "answer": [
+          "美团"
+        ],
+        "ability": "memory"
+      }
+    ]
+  },
+  {
+    "task_id": 50,
+    "query": "去美团直接搜索上海凯宾斯基大酒店，转发给微信好友1",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-54-40-33_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-30-23-58-43-88_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-30-23-58-50-71_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-30-23-58-54-86_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 51,
+    "query": "在美团直接搜索上海凯宾斯基大酒店，查看周边四星级酒店，选择其中337元的转发给微信好友1",
+    "optimal_steps": 14,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-54-40-33_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-02-05-89_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-02-24-90_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-04-19-81_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 52,
+    "query": "在美团直接搜索上海凯宾斯基大酒店，查看其酒店电话并准备拨号",
+    "optimal_steps": 15,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-54-40-33_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "进入详情页",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-07-43-89_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-07-46-27_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-07-55-42_6ba589b35cca5ff8f234db69f4487e8f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 53,
+    "query": "在美团直接搜索上海凯宾斯基大酒店并用高德导航过去，将高德地图设置为默认",
+    "optimal_steps": 20,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-54-40-33_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-08-16-09_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-08-16-09_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-08-57-84_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-09-12-71_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 54,
+    "query": "在美团直接搜索上海凯宾斯基大酒店，查看其总评及差评数量。并告知微信好友1",
+    "optimal_steps": 14,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-22-54-40-33_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "点击评价",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-11-27-59_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-11-34-95_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-11-34-95_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-00-13-05-95_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 55,
+    "query": "帮我看一下万象前海牛排家牛市经济单人套餐在美团、大众点评的价格哪个最便宜，并告诉微信好友1",
+    "optimal_steps": 14,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-51-67_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-09-32-88_3682dd3b48a02e39bdbe15157844c420.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信好友输入内容",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-15-04-18-13_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-15-04-20-13_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 56,
+    "query": "在美团上搜索万象前海牛排家，查看其“招牌干式熟成28天和牛M5短柄战斧双人套餐”的餐前面包是什么，并去告诉微信好友1",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-29-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-14-43-41-98_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-14-44-31-19_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 57,
+    "query": "在美团上搜索万象前海牛排家，购买午市经济单人套餐",
+    "optimal_steps": 8,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-29-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-11-16-34-61_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 58,
+    "query": "在美团上搜索万象前海牛排家，帮我预定9月3日晚上九点的五人包间，预定人小A先生",
+    "optimal_steps": 68,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-29-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-15-21-04-81_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-15-21-18-22_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-15-57-26-21_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 59,
+    "query": "在美团上搜索万象前海牛排家，查看是否可以停车，并告知微信好友1",
+    "optimal_steps": 19,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-29-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "输入",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-16-06-06-77_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-16-06-09-62_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 60,
+    "query": "在美团上搜索万象前海牛排家，转发到朋友圈",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-19-23-08-29-54_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-16-55-51-20_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-16-55-53-89_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 61,
+    "query": "我换新地址了：“中国华润大厦快递柜，小A，15191882309”，到京东（使用地址粘贴板），淘宝（使用智能粘贴）、OPPO应用商店（使用粘贴）、美团、拼多多帮我新增地址",
+    "optimal_steps": 9,
+    "app_num": 5,
+    "milestone": [
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-10-52-37-23_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-10-55-27-42_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-10-59-21-34_92da7e62ac6cee585683fc9612b3e721.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-02-51-86_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-05-24-31_e41039de8eaacf222a951c16e0560c66.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 62,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选收藏第一，记住店名，然后去美团、大众点评分别搜该店的两人套餐价格，将价格告诉微信好友1",
+    "optimal_steps": 15,
+    "app_num": 4,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-57-85_3682dd3b48a02e39bdbe15157844c420.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-06-19-07_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 63,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后生成分享图分享给微信好友1",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "生成图",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-03-54-52_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-04-06-21_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 64,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后分享给微信好友群",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-05-45-54_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-05-50-29_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 65,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后选封面图搜同款，并将第一个内容转发到微博",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "找同款",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-07-11-43_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-10-57-22_6b26a6c56e60a8073a58a8a51c55ef41.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 66,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后选封面图搜同款，并收藏第一个内容",
+    "optimal_steps": 11,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "找同款",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-07-11-43_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-07-29-30_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 67,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后收藏",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-15-24-43_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 68,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后关注博主",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce7.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-15-29-54_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 69,
+    "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后收藏并加入新建专辑“美食”",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-15-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-23-41-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-15-24-43_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "加入新专辑",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-20-20-01-89_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 70,
+    "query": "去美团搜索南山区汶和记，然后将其店铺相册中的第一张菜单图片保存，发给微信好友1",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "相册",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-08-29-64_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "Screenshot_2025-09-22-10-32-58-37_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-09-39-80_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 71,
+    "query": "去美团搜索南山区汶和记，然后囤一张100元代金券",
+    "optimal_steps": 12,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-11-44-37_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-11-58-35_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-12-05-44_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 72,
+    "query": "去美团搜索南山区汶和记，查看地址，选择用高德地图导航过去",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-10-04-09_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-11-06-89_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-11-17-06_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 73,
+    "query": "去美团搜索南山区汶和记，分享给QQ好友我的电脑",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-12-38-77_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-12-51-24_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-12-53-29_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 74,
+    "query": "去美团搜索南山区汶和记，然后收藏",
+    "optimal_steps": 30,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-13-54-41_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 75,
+    "query": "去美团搜索南山区汶和记，然后转发给微信好友1",
+    "optimal_steps": 15,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-56-27-08_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "raw_ability": "好友1",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-56-30-78_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-56-33-16_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 76,
+    "query": "去美团搜索南山区汶和记，然后转发到朋友圈",
+    "optimal_steps": 40,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-27-25-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-21-56-40-06_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 77,
+    "query": "去小红书搜东线战线变化图，筛选点赞第一并保存它的图片，去WPS里的《东线战线变化》PPT新启一页，将图片插入并保存",
+    "optimal_steps": 36,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-35-50-78_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-36-24-44_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-36-37-05_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-36-37-05_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-20-11-40-06-31_c37d74246d9c81aa0bb824b57eaf7062.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 78,
+    "query": "将小红书和哔哩哔哩的自我介绍修改为“nice~happy~year~”",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "raw_ability": "小红书修改",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-37-29-14_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "b站修改",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-38-54-68_149003a2d400f6adb210d7e357a3a646.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 79,
+    "query": "在小红书和哔哩哔哩添加新的收货地址和号码：cc 重庆仙桃数据谷元时空C02栋 18999663333",
+    "optimal_steps": 15,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-09-23-38_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-13-39-76_149003a2d400f6adb210d7e357a3a646.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 80,
+    "query": "我想去九寨沟玩，帮我分别在高德（筛选距离最近）、微信酒店民宿、美团看看附近的酒店（第一家），看看谁最便宜",
+    "optimal_steps": 14,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-06-32-00_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-10-06-64_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-15-37-44_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "answer": [
+          "微信，同程"
+        ],
+        "ability": "memory"
+      }
+    ]
+  },
+  {
+    "task_id": 81,
+    "query": "想吃火锅了，帮我在美团搜索火锅店，找到好评最多的一家团购一份2-3人餐的券，然后选择用高德地图导航去该火锅店",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-20-13-02_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-20-22-12_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-21-31-69_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-24-37-08_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 82,
+    "query": "用小红书搜索能开发票的保洁公司靠谱吗，同时去58同城找到本地服务保洁清洗，筛选能开发票的日常家庭保洁",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-45-40-08_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-51-04-44_ed5c27deb850c7685ff83a1a8021f662.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-52-00-22_ed5c27deb850c7685ff83a1a8021f662.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 83,
+    "query": "在小红书搜索好看的短剧推荐选择推荐第一名，然后去红果免费短剧搜索观看该短剧",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-12-16-74_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-13-21-98_a31cac73514ff8516d8e56844032054f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 84,
+    "query": "使用淘宝和京东搜索nars，筛选销量第一，看谁的更便宜，把结果告诉微信好友1",
+    "optimal_steps": 12,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-35-41-67_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-32-33_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-36-22-05_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-36-24-05_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 85,
+    "query": "京东搜索nars，点击销量排序，将第一个复制链接分享给好友1",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-44-55-24_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "copy",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-44-55-24_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "Screenshot_2025-09-15-13-43-23-48_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 86,
+    "query": "京东搜索nars，点击销量排序，将第一个分享生成海报，然后发送给微信好友1",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee3f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee3f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-44-51-39_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "生成海报",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-22-74_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-32-92_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 87,
+    "query": "京东搜索nars，点击销量排序，将第一个转发给微信好友1",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee4f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee4f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-38-74_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-41-05_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-43-26_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 88,
+    "query": "京东搜索nars，点击销量排序，将第一个转发朋友圈",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee5f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee5f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-58-62_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 89,
+    "query": "京东搜索nars，点击销量排序，将第一个转发微博",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee6f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee6f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微博",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-46-14-69_e6871cd13ad370b30dca80a8c4050ac0.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微博开屏广告",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-46-18-37_6b26a6c56e60a8073a58a8a51c55ef41.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-46-24-08_6b26a6c56e60a8073a58a8a51c55ef41.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 90,
+    "query": "京东搜索nars，点击销量排序，将第一个转发QQ空间",
+    "optimal_steps": 16,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee7f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee7f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-49-19_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ空间",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-46-06-80_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-46-09-25_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 91,
+    "query": "京东搜索nars，点击销量排序，将第一个转发给QQ好友我的电脑",
+    "optimal_steps": 30,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee8f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-37-27-92_4fbb30eb7b7166119bd25e41eddeee8f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-49-19_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "raw_ability": "我的电脑",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-53-12_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-31-22-45-53-12_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 92,
+    "query": "在小红书搜索下雨天素材并保存该视频，然后去快影将该素材（视频）导入使用一键出片功能，自动添加音乐",
+    "optimal_steps": 16,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-04-17-67_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-05-28-60_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-06-27-33_979efe3448f8118929a75114c329c025.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-06-38-58_979efe3448f8118929a75114c329c025.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-07-09-58_979efe3448f8118929a75114c329c025.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 93,
+    "query": "在小红书搜索一张汉堡图片，然后发给小布助手，让他把汉堡画成张嘴的汉堡包图片",
+    "optimal_steps": 19,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-32-36-94_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-32-51-09_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "打开小布",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-33-13-57_24b1f35b7ecf5335675b84677f729637.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-37-15-45_24b1f35b7ecf5335675b84677f729637.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 94,
+    "query": "帮我在美团外卖和淘宝闪购添加地址：元时空智能科技（重庆）有限公司，电话13008300025，用户周先生",
+    "optimal_steps": 17,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-15-55-48_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-16-10-21_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-17-16-79_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-10-17-58-56_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 95,
+    "query": "帮我把美团我的收藏中的维也纳酒店分享给QQ小欧，说“这个酒店不错”，再从酒店链接查看酒店详情",
+    "optimal_steps": 22,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-08-17-98_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-08-33-53_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-08-43-18_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 96,
+    "query": "在美团我的收藏找到维也纳酒店，然后查看地址，复制地址，然后去高德导航到酒店的最近位置，选择骑车。",
+    "optimal_steps": 23,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "copy",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-15-58-57_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "location",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-15-58-57_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "navigation",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-16-51-26_ca6ee20236ea15ad01663c6ea4ca0bdb.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 97,
+    "query": "在oppp商城和京东搜索OPPO折叠屏，购买地址选择公司元时空，看看两个平台哪天送达，并告知微信好友1",
+    "optimal_steps": 14,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-36-20-51_92da7e62ac6cee585683fc9612b3e721.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-11-37-03-39_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "Screenshot_2025-09-22-10-35-01-79_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 98,
+    "query": "帮我在美团、京东、淘宝的外卖搜索生椰拿铁，找找谁点库迪咖啡的生椰拿铁送达时间较快？",
+    "optimal_steps": 12,
+    "app_num": 3,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-14-32-35-31_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-14-33-10-23_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-14-34-21-10_090d9ae461b065ca11c329abb9cd0d70.jpg"
+        ]
+      },
+      {
+        "answer": [
+          "淘宝闪购"
+        ],
+        "ability": "memory"
+      }
+    ]
+  },
+  {
+    "task_id": 99,
+    "query": "去小红书搜索100元内最推荐的键盘，筛选图文，找到点赞超过6千的内容，保存照片去拼多多识别价格多少",
+    "optimal_steps": 10,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-06-52-54_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-07-00-39_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-07-32-18_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "识图",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-15-09-40-53_e41039de8eaacf222a951c16e0560c66.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 100,
+    "query": "去小红书搜索谐音梗图片，保存图片发给豆包，问他这个谐音梗答案是什么。",
+    "optimal_steps": 12,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-59-14-54_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "save",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-17-59-35-64_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-18-00-14-86_98a3ad1b03a1f4f37bc1b1582cf92d0d.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 101,
+    "query": "小红书搜索OPPO findx9上市时间，并告知微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-51-33-00_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-52-20-15_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 102,
+    "query": "小红书搜索开学第一天，进入第一条内容，将博主主页转发给QQ好友我的电脑",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-58-36-79_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-58-48-77_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-59-00-12_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-59-18-60_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 103,
+    "query": "去小红书查看我的心愿单里的鞋，然后去京东搜索该鞋并加入购物车",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-04-49-56_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-19-63_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 104,
+    "query": "去小红书搜索王鹏LLM，将其第一条内容转发给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-14-35-02_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-14-42-45_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-15-04-41_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 105,
+    "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-25-04_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-31-00_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-34-92_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 106,
+    "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给QQ好友我的电脑",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-25-04_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ好友",
+        "ability": "others",
+        "page_node": [
+          "Screenshot_2025-09-12-13-43-08-76_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-11-58-81_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 107,
+    "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给QQ空间",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-25-04_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ空间",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-12-17-44_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "Screenshot_2025-09-12-13-45-13-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 108,
+    "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发到朋友圈",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-25-04_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "Screenshot_2025-09-12-13-45-13-61_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 109,
+    "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发到微博",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-06-05-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-10-25-04_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微博",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-12-26-07_e6871cd13ad370b30dca80a8c4050ac0.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-12-31-91_6b26a6c56e60a8073a58a8a51c55ef41.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 110,
+    "query": "美团搜索海底捞，进入其品牌主页，关注并转发给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-15-91_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-26-68_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-39-94_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-45-10_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 111,
+    "query": "美团搜索海底捞，进入其品牌主页，关注并转发给QQ好友我的电脑",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-15-91_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-26-68_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ好友",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-46-17_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-49-73_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 112,
+    "query": "美团搜索海底捞，进入其品牌主页，关注并转发给QQ空间",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-15-91_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-26-68_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ空间",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-34-26-23_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-34-28-48_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 113,
+    "query": "美团搜索海底捞，进入其品牌主页，关注并转发给朋友圈",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-15-91_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-20-26-68_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "朋友圈",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-22-44-08_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-34-28-48_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 114,
+    "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-59-30_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "Screenshot_2025-09-12-17-26-49-46_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-38-07-70_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-38-12-31_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 115,
+    "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给QQ好友我的电脑",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-59-30_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "Screenshot_2025-09-12-17-26-49-46_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ好友",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-46-17_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-49-73_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 116,
+    "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给QQ空间",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-59-30_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "Screenshot_2025-09-12-17-26-49-46_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "QQ空间",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-40-05-99_9d26c6446fd7bb8e41d99b6262b17def.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-40-08-01_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 117,
+    "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给朋友圈",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-59-30_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "Screenshot_2025-09-12-17-26-49-46_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "朋友圈",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-20-84_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-39-23-61_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 118,
+    "query": "将美团休闲玩乐的按摩足疗第一个推荐分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-40-58_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_791cfe92b01641ae8f3512eeaa8063cb_observation_3.png",
+          "aiagent2_Screenshot_2025-09-01-10-42-43-95_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信好友1",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-47-93_860bc48c3aad114ac1ee206f23d5a6f5.jpg",
+          "update_by_hand_Screenshot_2025-09-08-18-58-18-79_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-55-38_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 119,
+    "query": "将美团休闲玩乐的洗浴汗蒸，把第一个分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-40-58_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-43-06-74_860bc48c3aad114ac1ee206f23d5a6f5.jpg",
+          "general_20250812_thread0_43030f459d094a9cbb085620eada1148_observation_3.png"
+        ]
+      },
+      {
+        "raw_ability": "微信好友1",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-43-11-45_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-43-18-39_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 120,
+    "query": "进入美团休闲玩乐KTV，把位置在前海的其中一个分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-40-58_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-43-31-39_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信好友1",
+        "ability": "others",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-19-12-28-63_860bc48c3aad114ac1ee206f23d5a6f5.jpg",
+          "aiagent2_Screenshot_2025-09-01-10-43-47-03_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-43-54-56_e39d2c7de19156b0683cd93e8735f348.jpg",
+          "aiagent2_Screenshot_2025-09-01-10-43-54-56_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 121,
+    "query": "美团点击休闲玩乐，点击酒吧，把第一个分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-40-58_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-44-10-64_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信好友1",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-44-16-38_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-44-22-97_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 122,
+    "query": "美团点击休闲玩乐，点击网吧电竞，把第一个分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-42-40-58_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_434e4b23b0d54731aba21d69125c21af_observation_3.png",
+          "aiagent2_Screenshot_2025-09-01-10-44-33-72_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "raw_ability": "微信好友1",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-44-38-11_860bc48c3aad114ac1ee206f23d5a6f5.jpg",
+          "update_by_hand_Screenshot_2025-09-08-18-50-06-51_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-10-44-44-72_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 123,
+    "query": "我想在京东秒送买一双男鞋，100元内44码",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-42-52-28_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-43-21-02_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-43-52-98_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 124,
+    "query": "帮我在京东外卖挑一个笔记本电脑，5000以内",
+    "optimal_steps": 11,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-45-20-41_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-46-00-24_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 125,
+    "query": "帮我在京东外卖点一杯瑞幸的生椰拿铁",
+    "optimal_steps": 10,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-47-20-56_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-47-35-22_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 126,
+    "query": "去京东外卖关注永辉超市店铺",
+    "optimal_steps": 9,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-48-39-12_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-48-57-22_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 127,
+    "query": "帮我在京东外卖查看附近3km的丽人美发团购",
+    "optimal_steps": 9,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-49-43-59_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-49-50-05_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 128,
+    "query": "帮我在京东外卖买一个洗面奶，明天12:00~12:15送达",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-51-57-77_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-51-57-77_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-52-38-23_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-16-52-46-65_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 129,
+    "query": "帮我在京东外卖挑一件白色连衣裙，120/56码",
+    "optimal_steps": 13,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-00-09-73_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-00-09-73_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-00-57-28_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 130,
+    "query": "帮我在京东外卖看看附近5km做美甲的团购",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-09-56-54_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-09-56-54_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-10-13-89_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 131,
+    "query": "帮我在京东外卖买两个藿香正气水，今天18点之后送达",
+    "optimal_steps": 9,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-12-25-97_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-12-25-97_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "两个",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-12-49-14_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-13-23-18_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 132,
+    "query": "帮我在京东外卖关注咖啡奶茶销量最高的店铺",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-24-14-25_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "raw_ability": "销量最高",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-24-23-21_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-24-38-10_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 133,
+    "query": "去京东外卖搜索超市，筛选距离最近的超市，搜索里面的洗脸巾和牙刷并加入购物车",
+    "optimal_steps": 8,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-29-27-68_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-29-27-68_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-29-41-96_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-30-03-95_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-30-03-95_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-30-19-48_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-30-19-48_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 134,
+    "query": "帮我在京东外卖买一件黑色裤子",
+    "optimal_steps": 11,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-32-25-64_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-32-25-64_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-15-17-32-35-38_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 135,
+    "query": "使用小红书搜索“制作双皮奶的教程”笔记并点赞第一篇笔记",
+    "optimal_steps": 8,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-24-45-44_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-25-50-35_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 136,
+    "query": "使用小红书搜索博主“一枝南南”并关注",
+    "optimal_steps": 16,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-40-31-85_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-40-43-22_a2db1b9502c98f25523e43284b79cce6.jpg",
+          "update_by_hand_Screenshot_2025-09-09-10-18-51-72_a2db1b9502c98f25523e43284b79cce6.jpg",
+          "update_by_hand_Screenshot_2025-09-09-10-19-11-20_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 137,
+    "query": "查看我的小红书全部订单",
+    "optimal_steps": 11,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_2b68eb46f1b8480a99a9931624da7e1f_observation_3.png",
+          "aiagent2_Screenshot_2025-07-16-09-41-50-06_a2db1b9502c98f25523e43284b79cce6.jpg",
+          "general_20250811_thread0_832f6636984847a583f7ced58aa5a5d4_observation_3.png",
+          "general_20250811_thread0_cd0dade081ee4320a7de4ac6cd25978b_observation_3.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_2b68eb46f1b8480a99a9931624da7e1f_observation_3.png",
+          "aiagent2_Screenshot_2025-07-16-09-41-50-06_a2db1b9502c98f25523e43284b79cce6.jpg",
+          "general_20250811_thread0_832f6636984847a583f7ced58aa5a5d4_observation_3.png",
+          "general_20250811_thread0_cd0dade081ee4320a7de4ac6cd25978b_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 138,
+    "query": "去小红书群聊广场，查看黄山攻略并加入群聊",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-44-40-16_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "加入群",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-45-54-61_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 139,
+    "query": "使用小红书搜索家装攻略并点赞最新的第一篇笔记",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-49-55-12_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-50-18-27_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-50-39-53_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 140,
+    "query": "清理小红书缓存",
+    "optimal_steps": 4,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-53-03-88_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-53-13-62_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 141,
+    "query": "小红书搜索'关晓彤 你的兵来了'点赞第一篇笔记",
+    "optimal_steps": 9,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-55-29-87_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "like",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-56-09-55_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 142,
+    "query": "小红书搜索汗疱疹怎么去除并查看第一篇笔记",
+    "optimal_steps": 4,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-57-33-19_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-57-36-71_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 143,
+    "query": "查看小红书搜索历史，并清除全部搜索历史记录",
+    "optimal_steps": 8,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-59-22-58_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-59-33-01_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 144,
+    "query": "小红书搜索短剧宫女扶摇录，并找到第一集分享到微信朋友圈，配文“好看 ~”",
+    "optimal_steps": 5,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-10-02-39-62_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-10-02-49-72_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-10-03-37-94_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-10-03-43-51_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 145,
+    "query": "小红书搜索“陈楚生是毋庸置疑的歌王”，查看评论",
+    "optimal_steps": 6,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-15-54-02-76_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_5c4e78152f1a4ce68d6aad1207ba5aa5_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 146,
+    "query": "看看美团KTV里面的魅KTV（前海卓越店）第一个可预订套餐的价格，告诉微信好友1",
+    "optimal_steps": 7,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_778e556e367f4f468a62256cb3bf89c5_observation_4.png"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-19-17-07-04_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 147,
+    "query": "查看美团美食中的第一个推荐店的代金券的售价，告诉微信好友1这家店的店名，以及代金券的价格",
+    "optimal_steps": 8,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_dd682d0af20047f98dee64c48ee02704_observation_3.png"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-19-26-22-19_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 148,
+    "query": "查看我的微信二维码",
+    "optimal_steps": 7,
+    "app_num": 1,
+    "milestone": [
+      {
+        "raw_ability": "完成任务",
+        "ability": "others",
+        "page_node": [
+          "wx_general_20250811_thread0_ccd73a96a7934b89aa3b3c71bd597360_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 149,
+    "query": "查看我的微信头像（大图）",
+    "optimal_steps": 11,
+    "app_num": 1,
+    "milestone": [
+      {
+        "raw_ability": "完成任务",
+        "ability": "others",
+        "page_node": [
+          "wx_general_20250811_thread0_52b5c6f9ed634048a3b36aeedfe4e912_observation_4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 150,
+    "query": "去美团APP，去外卖搜索优购哆生活超市，查看搜索结果第一家的配送时间是多少，告诉微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-21-14-32-12-46_860bc48c3aad114ac1ee206f23d5a6f5.jpg"
+        ]
+      },
+      {
+        "ability": "search",
+        "page_node": [
+          "general_20250811_thread0_1b94282b7fbd4aefa97ba96b3eb375f5_observation_6.png"
+        ]
+      },
+      {
+        "ability": "memory",
+        "page_node": [
+          "update_by_hand_Screenshot_2025-09-08-19-30-52-82_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 151,
+    "query": "给微信好友1打语音电话",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "wx_general_20250811_thread0_d6d41933bc384b89a54d44e7d98a7427_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 152,
+    "query": "查看美团附近自提点",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_298368704c3548cf94000e554752e68f_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 153,
+    "query": "查看我美团的收货地址",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_b8f477a7a963449fae2187f8c0818750_observation_4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 154,
+    "query": "删除美团历史常用地点中的桂湾地铁站",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_882c406cf8ef4426ac91c769a2fd1350_observation_3.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250811_thread0_882c406cf8ef4426ac91c769a2fd1350_observation_5.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 155,
+    "query": "修改美团定位为杭州",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250811_thread0_d56e0c5aa37b483f95400ac98775ad2e_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 156,
+    "query": "从美团团购的饮品小吃中购买古茗青柠水",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_a4f7559968da4a39a0fb85fc962398d6_observation_4.png"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "general_20250811_thread0_a4f7559968da4a39a0fb85fc962398d6_observation_5.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 157,
+    "query": "按距离最近筛选美团团购的推荐内容",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_0604d752e1ce4fd3994b078c2de0765a_observation_2.png"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "general_20250811_thread0_9bd345100dc349b292a77c36dc54328f_observation_4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 158,
+    "query": "筛选美团团购距离1km以内的推荐",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_0604d752e1ce4fd3994b078c2de0765a_observation_2.png"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "general_20250811_thread0_827ede8a742946498149b47557a0710c_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 159,
+    "query": "筛选美团团购可用神券的推荐",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_0604d752e1ce4fd3994b078c2de0765a_observation_2.png"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "general_20250811_thread0_af8e8376fcbc402994628d0e08753468_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 160,
+    "query": "查看美团团购的全部订单",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_0604d752e1ce4fd3994b078c2de0765a_observation_2.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_f22b60aa003044268d9e72ed73082659_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 161,
+    "query": "购买城市英雄68个游戏币的美团团购券",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "general_20250811_thread0_7ad83dc399f44f15a88185c4476bac33_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250811_thread0_7ad83dc399f44f15a88185c4476bac33_observation_5.png"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "general_20250811_thread0_7ad83dc399f44f15a88185c4476bac33_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 162,
+    "query": "进入美团病买药口腔看牙的第一个推荐",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_f60d31f4adee465badbced08288a465c_observation_3.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_abafc445b1034fc3acb898d8ad810e1c_observation_4.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_abafc445b1034fc3acb898d8ad810e1c_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 163,
+    "query": "开启美团的长辈模式，并查看通用",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_4.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_ba0ca1ac3b474964960e69d116d86555_observation_3.png",
+          "general_20250812_thread0_d0811a8d2c0a4e91b05f85f70931ad22_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 164,
+    "query": "开启美团的长辈模式，并查看账号与安全",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_4.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_af537ffa01ce42b2b802f074ec245557_observation_5.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 165,
+    "query": "开启美团的长辈模式，并查看客服",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_4.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_c71227fe6bbe4eff8d96aa2ca3e6eba9_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 166,
+    "query": "开启美团的长辈模式，并查看个人信息",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_4.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_52a87dc177544b6fa4ef904777cb2034_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_e7db294b5f144e748c5f69a65d39563d_observation_4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 167,
+    "query": "设置微信状态为美滋滋",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "set",
+        "page_node": [
+          "wx_general_20250811_thread0_d212573a1ec54181b2386bc87fa50c58_observation_4.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 168,
+    "query": "到小红书发表一篇文字笔记，内容是“大家每天都是怎么积极面对生活的呢 ~”，标题为nice",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "raw_ability": "输入内容",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-20-18-12_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-21-24-36_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "send",
+        "page_node": [
+          "aiagent2_Screenshot_2025-07-16-09-21-30-09_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 169,
+    "query": "清空美团历史浏览记录",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_66eaa60e51cd4a1f882edae0e2c2ace7_observation_3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 170,
+    "query": "到美团我的关注中，先取消美团蜜雪冰城关注，重新关注",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_cf8a0f4af6a14d29987a004338fc0924_observation_3.png"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "general_20250812_thread0_5ee84aacefd14ee5bee9886d558ded49_observation_5.png"
+        ]
+      },
+      {
+        "ability": "follow",
+        "page_node": [
+          "general_20250812_thread0_5ee84aacefd14ee5bee9886d558ded49_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 171,
+    "query": "京东特价搜索笔记本内存条，查看第一个产品，查看单品购买16GB的价格",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "general_20250812_thread0_05efe59a10f24984a0f2a511b71086b7_observation_5.png"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_05efe59a10f24984a0f2a511b71086b7_observation_6.png"
+        ]
+      },
+      {
+        "answer": [
+          "177.79"
+        ],
+        "ability": "memory"
+      }
+    ]
+  },
+  {
+    "task_id": 172,
+    "query": "清理美团缓存",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "general_20250812_thread0_1ccaacd9bbfe4ce3847a6f25f9a9b53b_observation_3.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "general_20250812_thread0_ceaf2f1b409c47f0a3e3a8eabe67ad97_observation_5.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 173,
+    "query": "将微信拍一拍设置为“你好”",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "wx_general_20250811_thread0_f9992a77b62d481da1e9ce5271af3c2f_observation_4.png"
+        ]
+      },
+      {
+        "ability": "set",
+        "page_node": [
+          "wx_general_20250811_thread0_f9992a77b62d481da1e9ce5271af3c2f_observation_6.png"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 174,
+    "query": "小红书搜索OPPOFINDX9外观，筛选最新，将第一条分享给微信好友1",
+    "optimal_steps": 0,
+    "app_num": 2,
+    "milestone": [
+      {
+        "ability": "search",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-54-55-62_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "filter",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-55-32-37_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "raw_ability": "转发",
+        "ability": "others",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-55-40-44_a2db1b9502c98f25523e43284b79cce6.jpg"
+        ]
+      },
+      {
+        "ability": "share",
+        "page_node": [
+          "aiagent2_Screenshot_2025-09-01-09-55-48-59_e39d2c7de19156b0683cd93e8735f348.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "task_id": 175,
+    "query": "京东查看我的会员中心，然后开通PLUS年卡",
+    "optimal_steps": 0,
+    "app_num": 1,
+    "milestone": [
+      {
+        "ability": "find",
+        "page_node": [
+          "aiagent2_Screenshot_2025-08-28-22-39-08-92_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "find",
+        "page_node": [
+          "Screenshot_2025-09-19-12-58-19-11_4fbb30eb7b7166119bd25e41eddeee2f.jpg"
+        ]
+      },
+      {
+        "ability": "pay",
+        "page_node": [
+          "general_20250812_thread0_7cbc8b695f8e47769814a5fef9d2f07a_observation_5.png"
+        ]
+      }
+    ]
+  }
+]

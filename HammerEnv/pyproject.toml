@@ -1,0 +1,23 @@
+[project]
+name = "hammer-env"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pip>=25.0.1", "dotenv", "gradio", "gradio-client"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+exclude = '''
+/3rdparty/
+'''
