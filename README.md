@@ -101,7 +101,106 @@ Define your agent in `src/agent/agent_base.py` by inheriting from **AgentBase** 
 Evaluation results are saved under `./checkpoints/`.
 
 ### 🧩 Graph-Structured Benchmark Construction
-To be implemented.
+
+#### 🔍 Breadth-First Search (BFS) Application Exploration
+
+We use our self-developed Android device interaction environment **HammerEnv** for breadth-first application exploration. HammerEnv is a comprehensive Android device interaction environment that enables dynamic exploration and automated operations of mobile applications.
+
+#### 🛠️ Installation Steps
+
+1. **Download and install android_env and android_world open-source projects**:
+
+https://github.com/google-deepmind/android_env
+https://github.com/google-research/android_world
+
+Note: When installing via pip, you need to use the editable mode with the command: pip install -e .
+
+2. **Configure ADB connection**:
+Refer to https://developer.android.com/tools
+
+3. **Set environment variables**:
+```bash
+export OPENAI_API_KEY="EMPTY"
+export OPENAI_BASE_URL="http://xxx.xxx.xxx.xxx/v1"
+```
+
+4. **Start interaction environment server**:
+```bash
+python HammerEnv/src/server/gradio_web_server_physical_device.py
+```
+
+5. **Run BFS application explorer**:
+```bash
+python HammerEnv/examples/bfs_app_explorer_fixed.py
+```
+
+#### ⚙️ Configuration
+
+##### Exploration Configuration Parameters
+| Parameter | Description | Default Value |
+|-----------|-------------|---------------|
+| `max_depth` | Maximum exploration depth | 3 |
+| `max_trajectories` | Maximum number of trajectories to generate | 50 |
+| `app_name` | Target application name | "小红书" |
+| `output_dir` | Trajectory output directory | "trajectories" |
+| `delay_between_actions` | Delay between actions (seconds) | 2.0 |
+| `model_name` | AI model name for analysis | "Qwen2.5-VL-72B-Instruct" |
+| `reset_environment_per_task` | Reset environment after each task | True |
+| `reset_delay` | Environment reset delay (seconds) | 1.0 |
+
+##### Command Line Parameters
+```bash
+python examples/bfs_app_explorer_fixed.py \
+    --server-name "http://localhost:7880/" \
+    --model-name "xxx" \
+    --app-name "小红书" \
+    --max-depth 3 \
+    --max-trajectories 20 \
+    --output-dir "trajectories" \
+    --delay 2.0
+```
+
+#### 🔍 Depth-First Search (DFS) Application Exploration
+
+To capture user long-horizon tasks, we manually capture sequences of mobile operation screenshots using a depth-first approach, then generate structured trajectory data through AI model analysis.
+
+##### Workflow
+1. **Screenshot Collection**: Manually capture application operation screenshots in order
+2. **Trajectory Analysis**: Use large models to analyze adjacent screenshot pairs
+3. **Action Recognition**: Extract precise click coordinates, input text, and other operations
+4. **Trajectory Generation**: Build trajectory files based on trajectory data
+
+##### Usage
+```bash
+# Run depth-first trajectory generation
+python src/graph_construction/pic2trajectory.py
+```
+
+##### Input Requirements
+- **Directory Structure**: `dfs/pic/trajectory1/`
+- **Required Files**: `query.txt` (task description) + `Screenshot_step_*_raw.{png|jpg}`
+- **Naming Convention**: Screenshot files numbered in operation order (trajectory1 represents the first trajectory)
+
+##### Output Results
+- **Trajectory File**: `dfs/trajectory/trajectory1/trajectory_v0.txt`
+- **Adjacency Matrix**: `dfs/trajectory/trajectory1/{query}.csv`
+
+#### 📁 Output Structure
+
+The system generates well-organized trajectory data with the following structure:
+
+```plaintext
+trajectories/
+├── 小红书/
+│   ├── 小红书.json
+│   ├── Screenshot_2025-01-10-20-10-21_0.jpg
+│   ├── Screenshot_2025-01-10-20-10-21_1.jpg
+│   └── Screenshot_2025-01-10-20-10-21_2.jpg
+└── 搜索/
+    ├── 搜索.json
+    ├── Screenshot_2025-01-10-20-15-30_0.jpg
+    └── Screenshot_2025-01-10-20-15-30_1.jpg
+```
 
 ---
 
@@ -251,13 +350,8 @@ bash run_colorbench.sh
 
 1) **下载并安装 android_env、android_world 两个开源项目**:
 
-```bash
-# android_env
-pip install -e https://github.com/google-deepmind/android_env.git
-
-# android_world
-pip install -e https://github.com/google-research/android_world.git
-```
+https://github.com/google-deepmind/android_env
+https://github.com/google-research/android_world
 注：pip 安装时需要使用编辑模式 pip install -e . 
 
 2) **配置ADB连接**:
