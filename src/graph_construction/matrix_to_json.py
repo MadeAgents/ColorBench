@@ -106,7 +106,6 @@ def convert_to_json(df):
         print(f"初始化图结构时出错: {e}")
         return {}
 
-    # 收集所有边
     self_loop_count = 0
     for source in df.index:
         for target in df.columns:
@@ -116,7 +115,7 @@ def convert_to_json(df):
                     if source == target:
                         self_loop_count += 1
                         # print(f"警告: 跳过自环边 {source} -> {target}")
-                        continue  # 跳过自环
+                        continue 
                     try: 
                         if isinstance(value, str):
                             edges_list = ast.literal_eval(value.strip())
@@ -181,7 +180,6 @@ def convert_to_json(df):
     return graph
 
 if __name__ == "__main__":
-    # 输入CSV文件路径
     csv_file_path = ""
     output_json_path = ""
     

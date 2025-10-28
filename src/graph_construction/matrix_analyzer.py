@@ -6,12 +6,10 @@ import re
 import ast
 from datetime import datetime
 
-# 定义统一的存储路径
 BASE_RECORD_PATH = os.path.join(".", "graph_images")
-# 确保存储目录存在
 os.makedirs(BASE_RECORD_PATH, exist_ok=True)
 
-# 调整图片大小的函数
+
 def resize_image(img, scale_factor=0.3):
     if img is None:
         return None
@@ -26,13 +24,11 @@ def resize_image(img, scale_factor=0.3):
     
     return img.resize((new_width, new_height), Image.Resampling.LANCZOS)
 
-# 获取图片路径
 def get_image_path(node_name):
     if not node_name:
         print("节点名称为空，无法获取图片路径")
         return None
-    
-    # 先检查统一存储路径
+
     possible_paths = [os.path.join(BASE_RECORD_PATH, node_name)]
     
     if not os.path.splitext(node_name)[1].lower() in ['.png', '.jpg', '.jpeg']:
@@ -42,7 +38,6 @@ def get_image_path(node_name):
             os.path.join(BASE_RECORD_PATH, f"{node_name}.jpeg")
         ])
     
-    # 再检查原始路径作为备选
     possible_paths.append(node_name)
     if not os.path.splitext(node_name)[1].lower() in ['0', '.png', '.jpg', '.jpeg']:
         possible_paths.extend([
@@ -60,7 +55,6 @@ def get_image_path(node_name):
     
     return None
 
-# 加载并调整图片大小
 def load_image(node_name):
     if not node_name:
         return None
@@ -78,12 +72,9 @@ def load_image(node_name):
             print(f"加载图片时出错 {img_path}: {str(e)}")
     return None
 
-# 加载邻接矩阵 - 确保从统一路径加载
 def load_adjacency_matrix(file_path):
-    # 优先尝试UTF-8编码，然后是GBK（中文常用）
     encodings = ['utf-8', 'gbk', 'gb2312', 'latin-1', 'iso-8859-1', 'utf-16']
-    
-    # 检查是否在统一路径中，如果不在则使用统一路径
+
     if not file_path.startswith(BASE_RECORD_PATH):
         file_name = os.path.basename(file_path)
         print(f"文件名: {file_name}")
@@ -114,7 +105,7 @@ def load_adjacency_matrix(file_path):
     except Exception as e:
         return None, f"加载文件时发生错误：{str(e)}"
 
-# 获取节点关系及跳转条件
+
 def get_node_relations(matrix, node_name):
     if node_name not in matrix.index:
         return None, None, f"错误：节点 '{node_name}' 不存在于矩阵中"
@@ -139,7 +130,7 @@ def get_node_relations(matrix, node_name):
     
     return pointing_to, pointed_by, None
 
-# 获取两个节点之间的边（只返回node1到node2的边）
+
 def get_edges_between_nodes(matrix, node1, node2):
     edges = []
     edge_details = []
@@ -150,25 +141,21 @@ def get_edges_between_nodes(matrix, node1, node2):
     value1 = matrix.loc[node1, node2]
     if pd.notna(value1) and str(value1).strip().lower() not in ['0', '', 'none', 'nan', 'null']:
         try:
-            # 尝试解析为列表
             edge_data = ast.literal_eval(str(value1).strip())
             if isinstance(edge_data, list):
-                # 如果是列表，将每个元素视为单独的边
                 for i, edge in enumerate(edge_data):
                     edges.append(f"{node1} -> {node2}: 边 {i+1}")
                     edge_details.append(str(edge))
             else:
-                # 如果不是列表，视为单条边
                 edges.append(f"{node1} -> {node2}: {value1.strip()}")
                 edge_details.append(value1.strip())
         except:
-            # 解析失败，视为单条边
             edges.append(f"{node1} -> {node2}: {value1.strip()}")
             edge_details.append(value1.strip())
     
     return edges, edge_details, None if edges else "两个节点之间没有边"
 
-# 处理查询
+
 def process_query(file, node_name):
     if file is None:
         return "请先上传邻接矩阵CSV文件", "", "", None, [], [], [], [], [], []
@@ -178,7 +165,6 @@ def process_query(file, node_name):
         unified_file_path = os.path.join(BASE_RECORD_PATH, file_name)
         
         if not os.path.exists(unified_file_path):
-            # 读取文件时使用二进制模式，保留原始编码
             with open(unified_file_path, 'wb') as f_out:
                 f_out.write(file.read())
             file.name = unified_file_path
@@ -239,7 +225,7 @@ def process_query(file, node_name):
             "\n".join(downstream_info)
            )
 
-# 处理图片选择
+
 def select_upstream_image(upstream_full_data, index, selected_indices):
     if index is None or index < 0:
         return selected_indices
@@ -266,7 +252,7 @@ def select_downstream_image(downstream_full_data, index, selected_indices):
     else:
         return selected_indices + [index]
 
-# 手动添加图片到选中列表
+
 def add_manual_image(manual_image_input, upstream_full_data, downstream_full_data, 
                      upstream_selected, downstream_selected, manual_selected):
     if not manual_image_input.strip():
@@ -297,7 +283,7 @@ def add_manual_image(manual_image_input, upstream_full_data, downstream_full_dat
         new_manual = manual_selected + [image_name]
         return new_manual, f"已添加到手动选中列表: {image_name}"
 
-# 获取选中的图片名称
+
 def get_selected_names(upstream_full_data, downstream_full_data, 
                       upstream_selected, downstream_selected, manual_selected):
     selected_names = []
@@ -319,7 +305,7 @@ def get_selected_names(upstream_full_data, downstream_full_data,
     
     return "选中的图片名称：\n" + "\n".join(selected_names)
 
-# 更新选中的图片展示
+
 def update_selected_images(upstream_full_data, downstream_full_data, 
                           upstream_selected, downstream_selected, manual_selected):
     selected_names = []
@@ -347,7 +333,7 @@ def update_selected_images(upstream_full_data, downstream_full_data,
     
     return images
 
-# 获取可用节点
+
 def get_available_nodes(file):
     if file is None:
         return "请先上传文件以查看可用节点"
@@ -366,7 +352,7 @@ def get_available_nodes(file):
     
     return "可用节点：\n" + ", ".join(matrix.index.tolist())
 
-# 辅助函数：保存文件并创建带时间戳的备份 - 关键修改：强制使用UTF-8编码保存
+
 def save_with_backup(matrix, original_file_name):
     try:
         os.makedirs(BASE_RECORD_PATH, exist_ok=True)
@@ -380,8 +366,7 @@ def save_with_backup(matrix, original_file_name):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         backup_path = os.path.join(backup_dir, f"{name}_{timestamp}{ext}")
         
-        # 关键修改：保存时使用UTF-8编码，并确保中文正常显示
-        matrix.to_csv(main_path, encoding='utf-8-sig')  # 使用utf-8-sig避免BOM问题
+        matrix.to_csv(main_path, encoding='utf-8-sig')  
         matrix.to_csv(backup_path, encoding='utf-8-sig')
         
         return main_path, backup_path
@@ -389,7 +374,6 @@ def save_with_backup(matrix, original_file_name):
     except Exception as e:
         raise Exception(f"保存文件时出错: {str(e)}")
 
-# 辅助函数：合并边信息
 def merge_edges(edge_strings):
     merged = []
     for edge_str in edge_strings:
@@ -414,7 +398,7 @@ def merge_edges(edge_strings):
     
     return unique_edges
 
-# 合并节点功能
+
 def merge_nodes(file, upstream_full_data, downstream_full_data, 
                upstream_selected, downstream_selected, manual_selected):
     if file is None:
@@ -519,7 +503,7 @@ def merge_nodes(file, upstream_full_data, downstream_full_data,
     except Exception as e:
         return f"保存文件时出错: {str(e)}", None, [], [], []
 
-# 删除节点功能
+
 def delete_node(file, node_to_delete):
     if file is None:
         return "请先上传邻接矩阵CSV文件", None
@@ -555,7 +539,7 @@ def delete_node(file, node_to_delete):
     except Exception as e:
         return f"保存文件时出错: {str(e)}", None
 
-# 新增节点功能（修复版）
+
 def add_new_node(file, new_node_name, upstream_relations, downstream_relations):
     """
     新增节点功能（智能解析版）
@@ -574,7 +558,7 @@ def add_new_node(file, new_node_name, upstream_relations, downstream_relations):
         with open(unified_file_path, 'wb') as f_out:
             f_out.write(file.read())
     
-    # 核心工具函数：智能分割关系（仅分割不在括号/引号内的逗号）
+
     def smart_split_relations(input_str):
         """
         分割格式为"节点1:边信息1,节点2:边信息2"的字符串
@@ -585,44 +569,37 @@ def add_new_node(file, new_node_name, upstream_relations, downstream_relations):
             
         parts = []
         current_part = []
-        bracket_level = 0  # 跟踪括号层级（{}[]）
-        quote_state = None  # 跟踪引号状态（None/'/"）
+        bracket_level = 0  
+        quote_state = None  
         
         for c in input_str:
-            # 处理引号状态（进入/退出引号）
             if c in ['"', "'"]:
                 if quote_state == c:
-                    quote_state = None  # 退出引号
+                    quote_state = None  
                 elif quote_state is None:
-                    quote_state = c  # 进入引号
+                    quote_state = c 
                 current_part.append(c)
                 continue
             
-            # 处理括号层级（进入/退出括号）
-            if quote_state is None:  # 仅在引号外时处理括号
+            if quote_state is None:  
                 if c in ['{', '[']:
                     bracket_level += 1
                 elif c in ['}', ']']:
                     bracket_level = max(0, bracket_level - 1)
-            
-            # 处理逗号：仅当不在引号内且括号层级为0时，才视为分隔符
+
             if c == ',' and quote_state is None and bracket_level == 0:
                 parts.append(''.join(current_part).strip())
                 current_part = []
             else:
                 current_part.append(c)
-        
-        # 添加最后一个部分
+
         if current_part:
             parts.append(''.join(current_part).strip())
-        
-        # 过滤空字符串
+
         return [p for p in parts if p]
-    
-    # 解析上游关系（使用智能分割）
+
     upstream = {}
     if upstream_relations.strip():
-        # 用智能分割代替简单split(',')
         relations = smart_split_relations(upstream_relations)
         for rel in relations:
             colon_positions = [i for i, c in enumerate(rel) if c == ':']
@@ -635,7 +612,6 @@ def add_new_node(file, new_node_name, upstream_relations, downstream_relations):
             
             upstream[node] = edge
     
-    # 解析下游关系（同上）
     downstream = {}
     if downstream_relations.strip():
         relations = smart_split_relations(downstream_relations)
@@ -688,7 +664,6 @@ def add_new_node(file, new_node_name, upstream_relations, downstream_relations):
     except Exception as e:
         return f"保存文件时出错: {str(e)}", None
 
-# 处理获取两个节点之间边的逻辑
 def get_edges_handler(file, node1, node2):
     """修复版：兼容文件对象和字符串路径，解决'name'属性错误"""
     try:
@@ -698,16 +673,12 @@ def get_edges_handler(file, node1, node2):
             print("未上传邻接矩阵文件")
             return [], [], "请先上传邻接矩阵CSV文件"
         
-        # 关键修复：处理文件对象和字符串路径两种情况
         if isinstance(file, str):
-            # 如果传入的是字符串路径，直接使用
             unified_file_path = file
         else:
-            # 如果传入的是文件对象，提取文件名
             file_name = os.path.basename(file.name)
             unified_file_path = os.path.join(BASE_RECORD_PATH, file_name)
             
-            # 确保文件存在
             if not os.path.exists(unified_file_path):
                 with open(unified_file_path, 'wb') as f_out:
                     f_out.write(file.read())
@@ -719,7 +690,6 @@ def get_edges_handler(file, node1, node2):
             print("节点名称为空")
             return [], [], "请输入两个节点的名称"
         
-        # 加载矩阵（使用修复后的文件路径）
         matrix, message = load_adjacency_matrix(unified_file_path)
         if matrix is None:
             print(f"加载矩阵失败: {message}")
@@ -747,8 +717,6 @@ def get_edges_handler(file, node1, node2):
         print(error_msg)
         return [], [], error_msg
     
-
-# 删除特定边的功能
 def remove_specific_edge(edges_state, edge_details_state, edge_to_remove):
     if not edge_to_remove.strip():
         return edges_state, edge_details_state, "请输入要删除的边内容"
@@ -759,8 +727,7 @@ def remove_specific_edge(edges_state, edge_details_state, edge_to_remove):
         
         new_edge_details = []
         new_edges = []
-        
-        # 收集所有原始边数据
+    
         all_edges = []
         for detail in edge_details_state:
             try:
@@ -771,14 +738,11 @@ def remove_specific_edge(edges_state, edge_details_state, edge_to_remove):
                     all_edges.append(data)
             except:
                 all_edges.append(detail)
-        
-        # 过滤掉要删除的边
+    
         filtered_edges = [edge for edge in all_edges if str(edge) != input_str]
-        
-        # 重建边列表和详情
+     
         for i, edge in enumerate(filtered_edges):
             new_edge_details.append(str(edge))
-            # 从第一条边获取节点关系
             if edges_state:
                 base_edge = edges_state[0].split(":")[0]
                 new_edges.append(f"{base_edge}: 边 {i+1}")
@@ -796,14 +760,14 @@ def remove_specific_edge(edges_state, edge_details_state, edge_to_remove):
         print(error_msg)
         return edges_state, edge_details_state, error_msg
 
-# 一键删除所有边
+
 def remove_all_edges(edges_state, edge_details_state):
     if not edges_state or not edge_details_state:
         return [], [], "没有可删除的边"
     
     return [], [], "已成功删除所有边"
 
-# 删除边功能（从文件中删除）
+
 def delete_edges(file, node1, node2, edges_state, edge_details_state):
     if file is None:
         return "请先上传邻接矩阵CSV文件", None
@@ -832,16 +796,13 @@ def delete_edges(file, node1, node2, edges_state, edge_details_state):
     new_matrix = matrix.copy()
     original_count = len(edge_details_state)
     
-    # 处理剩余边
     if edge_details_state:
         try:
-            # 解析所有剩余边
             remaining_edges = [ast.literal_eval(detail) for detail in edge_details_state]
             new_matrix.loc[node1, node2] = str(remaining_edges)
         except:
             new_matrix.loc[node1, node2] = str(edge_details_state)
     else:
-        # 如果没有剩余边，设置为0
         new_matrix.loc[node1, node2] = "0"
     
     updated_count = len(edge_details_state)
@@ -859,7 +820,6 @@ def delete_edges(file, node1, node2, edges_state, edge_details_state):
     except Exception as e:
         return f"保存文件时出错: {str(e)}", None
 
-# 添加边功能（带反向边）
 def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     """添加边功能，同时自动创建带来源标识的反向边"""
     if file is None:
@@ -877,7 +837,6 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     if not from_node or not to_node:
         return "请输入源节点和目标节点的名称", None
     
-    # 构建正向边动作数据
     action_data = {"action_type": action_type}
     if action_type == "click":
         if x is None or y is None:
@@ -891,26 +850,22 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     elif action_type == "input_text":
         if not text.strip():
             return "输入文本动作需要输入内容", None
-        # 确保中文文本正确处理
         action_data["text"] = text.strip()
-    else:  # other
+    else: 
         if not other.strip():
             return "其他动作需要详细信息", None
         action_data["details"] = other.strip()
     
-    # 构建反向边动作数据（自动添加，带来源标识）
     back_action_data = {
         "action_type": "system_button",
         "button": "back",
-        "from": from_node  # 关键：用from字段标识该反向边对应的上游节点
+        "from": from_node  
     }
     
-    # 加载现有矩阵
     matrix, message = load_adjacency_matrix(unified_file_path)
     if matrix is None:
         return message, None
     
-    # 检查节点是否存在
     if from_node not in matrix.index:
         return f"源节点 '{from_node}' 不存在于邻接矩阵中", None
     if to_node not in matrix.index:
@@ -918,7 +873,6 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     
     new_matrix = matrix.copy()
     
-    # 更新正向边（from_node → to_node）
     current_forward_value = new_matrix.loc[from_node, to_node]
     try:
         if pd.isna(current_forward_value) or str(current_forward_value).strip().lower() in ['0', '', 'none', 'nan', 'null']:
@@ -932,7 +886,7 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
         forward_edges = [action_data]
     new_matrix.loc[from_node, to_node] = str(forward_edges)
     
-    # 更新反向边（to_node → from_node，自动添加）
+    # update back edge automatically（to_node → from_node）
     # current_back_value = new_matrix.loc[to_node, from_node]
     # try:
     #     if pd.isna(current_back_value) or str(current_back_value).strip().lower() in ['0', '', 'none', 'nan', 'null']:
@@ -941,7 +895,6 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     #         back_edges = ast.literal_eval(str(current_back_value))
     #         if not isinstance(back_edges, list):
     #             back_edges = [back_edges]
-    #         # 避免重复添加相同的反向边
     #         if not any(edge.get("button") == "back" and edge.get("from") == from_node for edge in back_edges):
     #             back_edges.append(back_action_data)
     # except:
@@ -959,17 +912,16 @@ def add_edge(file, from_node, to_node, action_type, x, y, button, text, other):
     except Exception as e:
         return f"保存文件时出错: {str(e)}", None
 
-# 创建Gradio界面
+
 with gr.Blocks(title="邻接矩阵节点关系工具", theme=gr.themes.Soft()) as demo:
-    # 状态变量
     upstream_full_data = gr.State([])
     downstream_full_data = gr.State([])
     upstream_selected = gr.State([])
     downstream_selected = gr.State([])
     manual_selected = gr.State([])
     merged_file = gr.State(None)
-    edges_state = gr.State([])  # 存储完整边信息，用于后台处理
-    edge_details_state = gr.State([])  # 存储边的详细信息
+    edges_state = gr.State([]) 
+    edge_details_state = gr.State([])  
     
     gr.Markdown("## 邻接矩阵节点关系工具")
     gr.Markdown("支持节点关系查询、新增、合并、删除与边添加/删除功能")
