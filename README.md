@@ -278,5 +278,4 @@ If you use this project, please consider citing our paper:
 > [arXiv:2510.14621](https://arxiv.org/abs/2510.14621)
 
 📚 Dataset available at: [HuggingFace Dataset (Placeholder)](https://huggingface.co/datasets/ColorBench)
-
 ---

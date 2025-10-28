@@ -96,7 +96,6 @@ python3 run_colorbench.py --config configs/default.yaml --model your_model_name
 ```bash
 bash run_colorbench.sh
 ```
-
 #### 自定义智能体
 在 `src/agent/agent_base.py` 中继承 **AgentBase** 类并实现 `agent_step` 函数，用于执行动作与记录日志。
 随后在 `run_colorbench.py` 中注册该智能体，并可在 `./config/` 下添加新的评测配置文件。

@@ -1,3 +1,17 @@
+# Copyright 2025 OPPO
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+#     http://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 #!/usr/bin/env python3
 """
 API配置管理
@@ -13,7 +27,7 @@ class APIConfig:
     CONFIGS = {
         "oppo_demo": {
             "api_key": "EMPTY",
-            "base_url": "http://innoday-demo.oppo.test/v1",
+            "base_url": "http://your-api-endpoint/v1",
             "model_name": "Qwen2.5-VL-72B-Instruct"
         }
     }
@@ -30,10 +44,10 @@ class APIConfig:
         os.environ["OPENAI_API_KEY"] = config["api_key"]
         os.environ["OPENAI_BASE_URL"] = config["base_url"]
         
-        print(f"✅ API配置已设置: {config_name}")
-        print(f"   API Key: {config['api_key']}")
-        print(f"   Base URL: {config['base_url']}")
-        print(f"   Model: {config['model_name']}")
+        print(f"API配置已设置: {config_name}")
+        print(f"API Key: {config['api_key']}")
+        print(f"Base URL: {config['base_url']}")
+        print(f"Model: {config['model_name']}")
         
         return config
     
@@ -51,14 +65,14 @@ class APIConfig:
                 "content": "Hello, this is a connection test."
             }]
             
-            print("🔍 测试API连接...")
+            print("测试API连接...")
             response = get_chat_completion(messages=messages, model_id=config["model_name"])
-            print(f"✅ API连接成功: {response[:100]}...")
+            print(f"API连接成功: {response[:100]}...")
             
             return True
             
         except Exception as e:
-            print(f"❌ API连接失败: {e}")
+            print(f"API连接失败: {e}")
             return False
     
     @classmethod
