@@ -22,20 +22,6 @@ if torch.cuda.is_available():
 else:
     torch.device('cpu')
 
-def read_jsonl(path):
-    """Read JSONL file and preserve complete metadata"""
-    data = []
-    with open(path, "r", encoding="utf-8") as f:
-        for line in tqdm(f, desc="Loading data"):
-            try:
-                item = json.loads(line)
-                # Standardize metadata field
-                item["metadata"] = item.get("metadata", {})
-                data.append(item)
-            except json.JSONDecodeError:
-                logger.info(f"Invalid JSON line: {line.strip()}")
-    return data
-
 def setup_logging(log_file_path):
     """配置日志系统"""
     handler = colorlog.StreamHandler()

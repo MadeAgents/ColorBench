@@ -1,14 +1,10 @@
-# 更换思路，使用已经实验过的任务轨迹，统计模型在特定任务上的每一步可能的动作数
-from openai import OpenAI
 import os
 import json
 import time
 import logging
 import colorlog
 from pathlib import Path
-from dotenv import load_dotenv
 import yaml
-from zai import ZhipuAiClient
 
 
 
@@ -29,7 +25,6 @@ def setup_logging(log_file_path):
     logger.addHandler(handler)
     logger.setLevel("INFO")
     
-    # 添加文件处理器
     file_handler = logging.FileHandler(log_file_path, mode="w")
     file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
     logger.addHandler(file_handler)
@@ -41,54 +36,6 @@ log_file_path = f'./check_number_from_trajectory.log'
 setup_logging(log_file_path)
 logger = logging.getLogger(__name__)
 MAX_RETRIES = 3
-
-def get_glm_response(messages, temperature=0.1, top_k=5, top_p=0.9):
-
-    client = ZhipuAiClient(api_key="a29023ba80c242d8ad34d6b98e4c1cae.ktWzqwnAUsFMaIsA")
-    retries = 0
-    retry_delay = 2  
-    while retries<= MAX_RETRIES:
-        try:
-            response = client.chat.completions.create(
-                model="glm-4.5V",
-                messages=messages,
-                temperature=temperature,
-                max_tokens=2048,
-            ).choices[0].message.content.strip()
-            break
-        except Exception as e:
-            print(f"请求失败，重试中... 错误信息: {str(e)}")
-            retries += 1
-            time.sleep(retry_delay)
-    
-    if retries > MAX_RETRIES:
-        print("请求多次失败，终止操作。")
-        return None
-
-    return response
-
-def get_response(model, messages, api_key, base_url, temperature=0.1):
-    """Get response from LLM with retry mechanism"""
-    client = OpenAI(api_key=api_key, base_url=base_url)
-    retries = 0
-    retry_delay = 2
-    
-    while retries <= MAX_RETRIES:
-        try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                max_tokens=1024,
-            ).choices[0].message.content.strip()
-            return response
-        except Exception as e:
-            logger.warning(f"Request failed, retrying... Error: {str(e)}")
-            retries += 1
-            time.sleep(retry_delay)
-    
-    logger.error("Request failed after multiple retries.")
-    return None
 
 def caculate_iou(box1, box2):
     """计算两个边界框的IoU"""
@@ -110,7 +57,6 @@ def caculate_iou(box1, box2):
     return iou
 
 def check(action, actions):
-    # 检查atcion是否已经在actions中
     for existing_action in actions:
         if type(existing_action) == dict and type(action) == dict:
             if 'action_type' in existing_action and 'action_type' in action:
@@ -126,11 +72,9 @@ def check(action, actions):
                             if existing_action['direction'] == action['direction']:
                                 return True
                     else:
-                        # 其他动作类型，直接比较整个字典
                         if existing_action == action:
                             return True
         elif type(existing_action) == list and type(action) == list:
-            # 都是bbox的情况，计算iou
             if caculate_iou(existing_action, action) > 0.9:
                 return True
 
@@ -143,7 +87,7 @@ def main():
     graph_json = "./final_graph_0914.json"
     with open(graph_json, 'r', encoding='utf-8') as f:
         graph_data = json.load(f)
-    # 记录graph_data中每个节点的bbox
+
     node_bboxes = {}
     for source,targets in graph_data.items():
         node_bboxes[source] = []
@@ -170,7 +114,7 @@ def main():
             if not os.path.exists(task_folder):
                 logger.warning(f"Task folder {task_folder} does not exist, skipping...")
                 continue
-            # 读取trajectory文件
+
             trajectory_file = os.path.join(task_folder, 'trajectory.json')
             if not os.path.exists(trajectory_file):
                 logger.warning(f"Trajectory file {trajectory_file} does not exist, skipping...")
@@ -180,7 +124,6 @@ def main():
             if subdir.startswith("tasks"):
                 trajectory = trajectory.get('trajectory', [])
 
-            # 遍历轨迹的每一步
             for step in trajectory:
                 screenshot = step.get('screenshot', None)
                 if screenshot is None:
@@ -226,7 +169,7 @@ def main():
                             for existing_action in counts_dict[task][screenshot]:
                                 if 'action_type' in existing_action and existing_action['action_type'] in ['click', 'long_click'] and 'x' in existing_action and 'y' in existing_action:
                                     ex, ey = int(existing_action['x']), int(existing_action['y'])
-                                    # 欧氏距离小于100认为是重复
+
                                     if (abs(ex - x) <= 150 and abs(ey - y) <= 150) :
                                         flag=True
                                         break
@@ -261,7 +204,6 @@ def main():
     for screen, actions in screenshot_actions.items():
         screenshot_counts[screen] = len(actions)
 
-    # 把结果存入json文件
     output_file = "screenshot_action_counts.json"
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(screenshot_counts, f, ensure_ascii=False, indent=4)
@@ -269,7 +211,7 @@ def main():
     
             
     preference_counts = list(screenshot_counts.values())
-    # 输出统计结果
+
     output_csv = "screenshot_preference_counts.csv"
     with open(output_csv, 'w', encoding='utf-8') as f:
         f.write("screenshot,preference_count\n")

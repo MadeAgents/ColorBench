@@ -18,14 +18,12 @@ def setup_console_encoding():
     try:
         import sys
         import codecs
-        
-        # 设置标准输出编码
+
         if hasattr(sys.stdout, 'reconfigure'):
             sys.stdout.reconfigure(encoding='utf-8')
         if hasattr(sys.stderr, 'reconfigure'):
             sys.stderr.reconfigure(encoding='utf-8')
-            
-        # 设置环境变量
+
         os.environ['PYTHONIOENCODING'] = 'utf-8'
         
     except Exception as e:
@@ -33,11 +31,9 @@ def setup_console_encoding():
 
 def setup_logging(log_file_path):
     """Configure logging system with thread-safe handlers"""
-    # 设置控制台编码为UTF-8
     import io
     import codecs
-    
-    # 创建线程安全的日志格式
+
     formatter = colorlog.ColoredFormatter(
         '%(log_color)s%(asctime)s - [Thread-%(thread)d] - %(name)s - %(levelname)s - %(message)s',
         log_colors={
@@ -48,17 +44,14 @@ def setup_logging(log_file_path):
             'CRITICAL': 'red,bg_white'
         }
     )
-    
-    # 控制台处理器（设置UTF-8编码）
+
     console_handler = colorlog.StreamHandler()
     console_handler.setFormatter(formatter)
-    
-    # 文件处理器（设置UTF-8编码）
+
     file_handler = logging.FileHandler(log_file_path, mode="w", encoding='utf-8')
     file_formatter = logging.Formatter('%(asctime)s - [Thread-%(thread)d] - %(name)s - %(levelname)s - %(message)s')
     file_handler.setFormatter(file_formatter)
-    
-    # 配置根日志器
+
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     logger.addHandler(console_handler)
@@ -74,7 +67,6 @@ def load_yaml(file_path):
         return None
 
 def main():
-    # 设置控制台编码
     setup_console_encoding()
     
     # Load configuration
@@ -83,7 +75,7 @@ def main():
     )
     parser.add_argument(
         "--config",
-        default='./config/default.yaml',
+        default='./config/mlas.yaml',
         help="Path to the config YAML file.",
     )
     parser.add_argument(
@@ -147,7 +139,7 @@ def main():
     logger = logging.getLogger(__name__)
     logger.info("Starting Multithreaded Tasks Execution!")
 
-    # 修改config
+    # renew config
     if args.no_use_memory:
         config['agent'][args.mode]['memory'] = False
     if args.no_use_reflect:
@@ -159,29 +151,22 @@ def main():
     print(config['agent'][args.mode]['plan'] , config['agent'][args.mode]['reflect'], config['agent'][args.mode]['memory'])
     print(type(args.no_use_plan), type(args.no_use_reflect), type(args.no_use_memory))
 
-    # 创建线程安全的工厂
     agent_factory = ThreadSafeAgentFactory(config['agent'])
     graph_factory = ThreadSafeGraphDataSet(config['graph'])
     task_executor = ThreadSafeTaskExecutor(agent_factory, graph_factory, config)
 
-    # 读取任务数据
     task_json = config['tasks']['tasks_file']
     with open(task_json, 'r', encoding='utf-8') as f:
         data = json.load(f)
-
-    # 筛选任务范围
     task_range = [item for item in data if args.task_start <= item.get('task_id', 0) <= args.task_end]
     logger.info(f"Processing {len(task_range)} tasks ({args.task_start}-{args.task_end}) with {args.max_workers} threads")
 
-    # 执行结果统计
     results = []
     completed_tasks = 0
     failed_tasks = 0
     total_start_time = time.time()
 
-    # 使用线程池执行任务
     with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
-        # 提交所有任务
         future_to_task = {}
         for task_item in task_range:
             future = executor.submit(
@@ -195,7 +180,6 @@ def main():
             )
             future_to_task[future] = task_item
 
-        # 处理完成的任务
         for future in as_completed(future_to_task):
             task_item = future_to_task[future]
             try:
@@ -223,7 +207,6 @@ def main():
                     'thread_id': 'unknown'
                 })
 
-    # 统计结果
     total_time = time.time() - total_start_time
     logger.info("=" * 80)
     logger.info("MULTITHREADED EXECUTION SUMMARY")
@@ -237,7 +220,6 @@ def main():
     logger.info(f"Threads used: {args.max_workers}")
     logger.info("=" * 80)
 
-    # 保存执行结果摘要
     summary_file = os.path.join(output_dir, config_name, 'execution_summary.json')
     os.makedirs(os.path.dirname(summary_file), exist_ok=True)
     

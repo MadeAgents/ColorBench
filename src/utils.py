@@ -1,4 +1,5 @@
 import os
+import time
 import numpy as np
 import base64
 import requests
@@ -6,20 +7,16 @@ from openai import OpenAI
 
 def calculate_cos_similarity_A_and_Batch_B(A, B):
     dot_product = np.dot(A, B.T)
-    # 计算模长
     norm_A = np.linalg.norm(A)
-    norm_B = np.linalg.norm(B, axis=1)  # (4,)
-    # 计算余弦相似度
+    norm_B = np.linalg.norm(B, axis=1)  
     cosine_sim = dot_product / (norm_B * norm_A)
     return cosine_sim
 
 
 def calculate_cos_similarity_A_and_B(A, B):
     dot_product = np.dot(B, A)
-    # 计算模长
     norm_A = np.linalg.norm(A)
     norm_B = np.linalg.norm(B)
-    # 计算余弦相似度
     cosine_sim = dot_product / (norm_B * norm_A)
     return cosine_sim
 
@@ -46,13 +43,12 @@ def calculate_iou(box1, box2):
 class LLMClient:
     def __init__(self):
         self.api_key = os.getenv('VLM_API_KEY', 'empty')
-        self.base_url = os.getenv('VLM_BASE_URL', 'http://demonstration.oppo.test/v1')
+        self.base_url = os.getenv('VLM_BASE_URL', 'http://your-api-endpoint/v1')
         if not self.api_key:
             raise ValueError("VLM_API_KEY environment variable is not set")
         if not self.base_url:
             raise ValueError("VLM_BASE_URL environment variable is not set")
         self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
-        # self.model = os.environ.get('model_name')
         self.model = "qwen2.5-vl-72b-instruct"
 
     def encode_image(self, image_path):

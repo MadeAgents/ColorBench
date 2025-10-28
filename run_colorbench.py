@@ -10,7 +10,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import yaml
 from src.agent import VanillaAgent
-# from src.memory_agent import Memory_Agent
 from src.agent.agent_atlas import AtlasAgent
 from src.agent.agent_tars import TarsAgent
 from src.agent.agent_tars_dpo import TarsDPOAgent
@@ -38,7 +37,6 @@ def setup_logging(log_file_path):
     logger.addHandler(handler)
     logger.setLevel("INFO")
     
-    # 添加文件处理器
     file_handler = logging.FileHandler(log_file_path, mode="w")
     file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
     logger.addHandler(file_handler)
@@ -54,7 +52,6 @@ def load_yaml(file_path):
 
 
 def main():
-    # parser只写yaml，默认default.yaml
     parser = argparse.ArgumentParser(
         description="Run inference on smartphone assistant tasks"
     )
@@ -70,19 +67,18 @@ def main():
     )  
     parser.add_argument(
         "--api",
-        default='gpt',  # custom
+        default='gpt',  
         help="API model to use.",
     )
 
     args = parser.parse_args()
-    tmp_time = datetime.datetime.now().strftime("%m%d_%H%M")  #%Y%m%d_%H%M%S
+    tmp_time = datetime.datetime.now().strftime("%m%d_%H%M") 
     config_name = f'vanilla_{args.model}_{tmp_time}'
 
     config = load_yaml(args.config)
     parent_dir = config['path']['image_folder']
     graph_json_file = config['graph']['graph_file']
     output_dir = config['path']['output_folder']
-    # output_dir = os.path.join(config['path']['output_folder'], args.model, tmp_time)
     os.makedirs(output_dir, exist_ok=True)
 
     log_file_path = f'./log/{config_name}.log'
@@ -90,9 +86,7 @@ def main():
     logger = logging.getLogger(__name__)
     logger.info("Progress Start!")
 
-    # 创建图数据集对象
     graph_dataset = Graph_DataSet(config['graph'])
-    # 设置任务
     if 'qwen3' in args.model:
         agent = Qwen3Agent(config['agent'])
     elif 'qwen' in args.model:
@@ -113,7 +107,6 @@ def main():
 
 
     task_json = config['tasks']['tasks_file']
-    # # 读json文件
     with open(task_json, 'r', encoding='utf-8') as f:
         data = json.load(f)
     for task_item in data:
@@ -139,7 +132,7 @@ def main():
                 complete = True
             current_step += 1
 
-        # 保存轨迹
+        # save trajectory
         use_time = time.time() - start_time
         logger.info(f"任务 '{task}' 执行结束, 总步数: {current_step}, 用时: {use_time:.2f} 秒")
         graph_dataset.save_trajectory(output_dir, use_time, save_image=False, config_name=config_name, parent_dir = parent_dir)
