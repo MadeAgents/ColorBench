@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 checkpoint_path = 'path/to/checkpoints'
-task_json = './data/tasks923.json'
+task_json = './data/tasks.json'
 
 
 with open(task_json, 'r', encoding='utf-8') as f:

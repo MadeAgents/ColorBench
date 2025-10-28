@@ -73,7 +73,6 @@ def position_to_direction(x1, y1, x2, y2):
                      
 
 class Graph_DataSet:
-    # 初始化任务对象，包含query，调用llm函数
     def __init__(self, graph_config):
         self.graph_json_file = graph_config['graph_file']
         if not self.graph_json_file:
@@ -107,13 +106,13 @@ class Graph_DataSet:
             'id': 0,
             'screenshot': self.home_page,  
             'action': None  
-        }]  # 记录完整的任务轨迹，包含每一步的动作和状态
+        }] 
         self.history_stack = [self.home_page]  
 
     def clear_task(self, task_json):
         self.query = ''
         self.trajectory = [] 
-        self.history_stack = []  #
+        self.history_stack = [] 
 
     def save_trajectory(self, output_dir, use_time, save_image=False, config_name = None, parent_dir = None, task_id = None):
         """
@@ -125,7 +124,6 @@ class Graph_DataSet:
         :param parent_dir: 父目录
         :param task_id: 任务ID（可选）
         """
-        # 处理任务名中的特殊字符，避免文件路径错误
         safe_query = self.query.replace('/','_').replace(':','_').replace('*','_').replace('?','_').replace('"','_').replace('<','_').replace('>','_').replace('|','_')
         
         # store structure：output_dir/config_name/safe_query/
@@ -137,7 +135,7 @@ class Graph_DataSet:
         
         os.makedirs(task_folder, exist_ok=True)
         
-        # 保存轨迹JSON文件
+        # save trajectory JSON
         output_json = os.path.join(task_folder, 'trajectory.json')
         trajectory_data = {
             'task_id': task_id,
@@ -151,7 +149,7 @@ class Graph_DataSet:
         with open(output_json, 'w', encoding='utf-8') as f:
             json.dump(trajectory_data, f, ensure_ascii=False, indent=2)
         
-        # 保存轨迹截图
+        # save images with action points if needed
         if save_image and parent_dir:
             for i, step in enumerate(self.trajectory):
                 try:
@@ -165,13 +163,11 @@ class Graph_DataSet:
                         if (step.get('action') and 
                             isinstance(step['action'], dict) and 
                             step['action'].get('action_type') in ['click', 'long_press']):
-                            # 画图
                             try:
                                 with Image.open(screenshot_path) as img:
                                     draw = ImageDraw.Draw(img)
                                     x, y = int(step['action']['x']), int(step['action']['y'])
-                                    r = 10  # 半径
-                                    # 画一个实心大红点，外面是白色圈
+                                    r = 10  
                                     draw.ellipse([x - r - 3, y - r - 3, x + r + 3, y + r + 3], fill="#FFFFFF")
                                     draw.ellipse([x - r, y - r, x + r, y + r], fill="#FF0000", width=3)
                                     img_output_path = os.path.join(task_folder, f'trajectory_{i}_{action}.png')
@@ -195,7 +191,6 @@ class Graph_DataSet:
         if not parsed_input:
             return None, "Error Format，Please use following format.(waitin for implement)", answer_text
 
-        # 回答，任务结束
         if parsed_input['action_type'] == 'complete':
             answer_text = 'complete'
             return None, "Complete the task", answer_text
@@ -203,9 +198,7 @@ class Graph_DataSet:
         current_node_id = self.trajectory[-1]['screenshot']
         logger.info(f"Current node: {current_node_id}")
 
-        # 特殊处理back按钮，使用历史记录
         if parsed_input['action_type'] == 'system_button' and parsed_input['button'] == 'back':
-            # 检查历史记录是否有足够的页面可以返回
             if len(self.history_stack) >= 2:
                 self.history_stack.pop()
                 previous_page = self.history_stack.pop()
@@ -253,7 +246,7 @@ class Graph_DataSet:
                     continue
                 match = False
                 
-                # 1. 处理click动作：检查坐标距离
+                # 1. click: check position or bbox
                 if action_type in ['click','long_press']:
                     if 'bbox' in action and 'x' in parsed_input and 'y' in parsed_input:
                         x1, y1, x2, y2 = action['bbox']
@@ -274,12 +267,13 @@ class Graph_DataSet:
                             logger.info(f"click not match with {action}  (距离: {distance:.2f} >= 阈值: {threshold:.2f})")
                             pass
                 
-                # 2. 处理滑动：只需方向匹配
+                # 2. swipe: check direction
                 elif action_type == 'swipe':
                     if action['direction'] == parsed_input['direction']:
                         match = True
                         messages.append(f"滑动方向匹配: swipe {action['direction']}")
-                # 3. 处理输入文字：检查文字包含关系
+
+                # 3. input: check text content
                 elif action_type == 'type':
                     if 'text' in action and 'text' in parsed_input:
                         action['text'] = action['text'].lower().replace('，', ',').replace('。', ',').replace(' ', '').replace('/',',').replace(':',',').replace('*',',').replace('?',',').replace('"',',').replace('“',',').replace('”',',').replace('<',',').replace('>',',').replace('|',',').lower()  
@@ -304,21 +298,19 @@ class Graph_DataSet:
                             # 如果文字有包含关系
                             match = True
                             messages.append(f"Input text match: {parsed_input['text']}")
-                # 4. 处理其他动作：只需动作类型匹配
+
+                # 4. others: only check action_type
                 else:
                     match = True
                     messages.append(f"动作类型匹配: {action_type}")
                 
                 if match:
-                    # 说明到这条边有满足的，直接break，看下一条边
                     edges.append(edge)
                     break
         
         if edges:
-            # 如果有多条匹配边，任意选择一条
             n = random.randint(0, len(edges)-1)
             return edges[n], f"跳转成功: {messages[n]}", answer_text
-        # 没有找到匹配的边（应该保持留在原地）
 
         if wait_edges:
             n = random.randint(0, len(wait_edges)-1)
@@ -341,22 +333,19 @@ class Graph_DataSet:
         if self.graph_data is None:
             return None, "未加载到JSON数据，无法进行跳转判断", answer_text
 
-        # 拿到新的action，应该保存到轨迹中
-        self.trajectory[-1]['action'] = user_input  # 更新当前轨迹的动作
+        self.trajectory[-1]['action'] = user_input 
         if action_description:
             self.trajectory[-1]['action_description'] = action_description
         if action_step_info:
-            # 除了execution都存下来
             for key in action_step_info:
                 if key != 'step_number' and key != 'screenshot':
                     self.trajectory[-1][key] = action_step_info[key]
 
-        # 根据动作返回跳转的节点和跳转信息
         target_node, jump_message, answer_text = self.check_jump_condition(user_input)
 
         if answer_text:
             self.trajectory[-1]['answer'] = answer_text
-            return None, answer_text  # str
+            return None, answer_text  
 
         elif target_node is not None:
             self.history_stack.append(target_node)
@@ -376,8 +365,6 @@ class Graph_DataSet:
             if int(x1) <= int(parsed_input['x']) <= int(x2) and int(y1) <= int(parsed_input['y']) <= int(y2):
                 return app
         return None
-
-
 
 
 def get_qwen_response(query, imagebase64):
@@ -426,19 +413,17 @@ def extract_before_heading(text):
     return text.strip() 
 
 if __name__=='__main__':
-    graph_json_file = '/home/notebook/code/personal/S9060045/demonstration_based_learning/graph_demo/graph_json/redbook.json'
-    output_dir = '/home/notebook/code/personal/S9060045/demonstration_based_learning/graph_demo/task_demo'
+    graph_json_file = ''
+    output_dir = ''
     example_task = '在小红书，先查看个人主页，再点击左上角设置按钮，返回个人主页，最后返回推荐首页' 
 
-    # 设置agent
+
     client = OpenAI(
-        base_url="your_base_url",
+        base_url="http://your-api-endpoint/v1",
         api_key="empty",
     )
 
-    # 创建图数据集对象
     graph_dataset = Graph_DataSet(graph_json_file)
-    # 设置任务
     graph_dataset.set_task(example_task)
     complete = False
 
@@ -462,7 +447,6 @@ if __name__=='__main__':
             complete = True
         current_step += 1
 
-    # 保存轨迹
     graph_dataset.save_trajectory(output_dir)
     logger.info(f"任务轨迹已保存到: {os.path.join(output_dir, example_task)}")
 
