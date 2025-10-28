@@ -5,12 +5,10 @@ import base64
 import json
 import time
 from PIL import Image
-# import src.graph_tools
 from pathlib import Path
 import logging
 from openai import OpenAI
 import re
-# from transformers import Qwen3VLMoeForConditionalGeneration, AutoProcessor
 
 
 PROMPT = """
@@ -80,14 +78,11 @@ You are provided with function signatures within <tools></tools> XML tags:
 logger = logging.getLogger(__name__)
 
 MAX_RETRIES = 5
-# TODO：graph搞成JSON格式，统一动作空间，用OWL先全跑一遍看看效果；task的json文件也做出来；关键节点使用图片数据记录。现在表格2 task数量没对上
-
 def get_gpt_response(messages, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
 
     client = OpenAI(api_key="", base_url="")
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2 
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -109,12 +104,10 @@ def get_gpt_response(messages, temperature=0.1, top_k=5, top_p=0.9):
     return response
 
 def get_glm_response(messages, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
-
+ 
     client = ZhipuAiClient(api_key="")
-    # print(f"Using Zhipu AI Client with API Key: {client.api_key}")
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2  
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -137,11 +130,10 @@ def get_glm_response(messages, temperature=0.1, top_k=5, top_p=0.9):
 
 
 def get_qwen_response(messages, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
 
     client = OpenAI(api_key="",base_url="")
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2  
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -165,7 +157,7 @@ def get_qwen_response(messages, temperature=0.1, top_k=5, top_p=0.9):
 def get_ocr_response(action_str, action_thought, img_width, img_height, image_path):
     client = OpenAI(api_key='', base_url='')
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2  
     image_base64 = encode_image_to_base64(image_path)
     messages = [
         {
@@ -232,9 +224,6 @@ def parse_mobile_response(response):
             )
         ]
 
-    # parsed_action = None
-    # if action.startswith("{"):
-    #     parsed_action = json.loads(action)
     return {
         "reason": reason,
         "action": action,
@@ -242,24 +231,17 @@ def parse_mobile_response(response):
 
 class APIAgent:
     def __init__(self, model, agent_config=None):
-        # self.agent_config = agent_config
-        # self.model = agent_config['model']
-        # self.api_key = agent_config['api_key']
-        # self.base_url = agent_config['base_url']
-        # self.system_prompt = SYSTEM_PROMPT
         self.task = None
         self.model = model
         self.get_response = response_map[self.model]
-        self.history = []  # 任务记忆结构
+        self.history = [] 
         
     def set_task(self, task):
-        self.task = task  # 任务查询
-        self.history = []  # 任务记忆结构
+        self.task = task  
+        self.history = []  
         
     def parse_user_input(self, parsed, img_width, img_height, image_path):
-        # {"name": <function-name>, "arguments": <args-json-object>
         """解析用户输入的格式 action_type[param] 或 ANSWER[TEXT]"""
-        # action: json
         try:
             input_str = parsed['action'].lower()
             if 'press_back' in input_str:
@@ -296,7 +278,6 @@ class APIAgent:
                 result = {'action_type': 'open','app': app_name}
                 return result
 
-            # 剩余情况，click和long_press，接一个小模型来点击，单独写一个函数
             if 'click' in input_str:
                 result = {'action_type': 'click'}
             elif 'long_press' in input_str:
@@ -319,7 +300,6 @@ class APIAgent:
 
     def scale_image(image_path, scale=0.25):
         """将图片缩放到指定比例，返回PIL Image对象"""
-        # 展示使用的，可以保存使用？倒也不必
         try:
             with Image.open(image_path) as img:
                 new_width = int(img.width * scale)
@@ -333,21 +313,16 @@ class APIAgent:
     def agent_step(self, image_path):
         """调用大模型获取操作建议"""
         try:
-            # 读取并编码图片
             with Image.open(image_path) as img:
                 img_width, img_height = img.size
-            # with open(image_path, "rb") as image_file:
-            #     encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
             image_base64 = encode_image_to_base64(image_path)
         except Exception as e:
             logger.error(f"Error when reading or encoding image: {str(e)}")
             
         try:
-            # user_prompt = f"The user query: {self.task}.\n"
-            # user_prompt += '\nAttention! You must open app with action open[app] directly, do not click the app icon to open it. You can open the specified app(in Chinese name) at any page.'
             history_content = ''
             if self.history!= []:
-                for i, step in enumerate(self.history, 1):  # 完整历史轨迹
+                for i, step in enumerate(self.history, 1):  
                     history_content += f"Step {i}: Thought: {step['thought']}; Action: {step['action']}\n"
                     
 
@@ -370,7 +345,6 @@ class APIAgent:
                 }
             ]
             logger.info(f"Current image path: {image_path}")
-            # print(self.model, self.base_url)
             response = self.get_response(messages=messages)
             logger.info(f"Raw Response:\n{response}")
             parsed = parse_mobile_response(response)
@@ -380,11 +354,9 @@ class APIAgent:
                     "thought": parsed['reason'],
                     "action": parsed['action']
                 }
-            )  # 更新任务记忆结构
-            # \nAction:{action}
-            action = self.parse_user_input(parsed, img_width, img_height, image_path)  # 解析动作
+            ) 
+            action = self.parse_user_input(parsed, img_width, img_height, image_path) 
             logger.info(f"Parsed action: {action}")
-            # 这里后面还是改成None比较好
             return action, step_info
 
         except Exception as e:
@@ -393,8 +365,7 @@ class APIAgent:
 
 if __name__ == "__main__":
 
-    image_path = '/home/notebook/code/personal/S9060045/demonstration_based_learning/final_graph_images_919/aiagent2_Screenshot_2025-07-15-16-43-35-69_4fbb30eb7b7166119bd25e41eddeee2f.jpg'
-    # aiagent2_Screenshot_2025-07-21-17-59-26-39_a2db1b9502c98f25523e43284b79cce6.jpg'
+    image_path = ''
     with Image.open(image_path) as img:
         img_width, img_height = img.size
     with open(image_path, "rb") as image_file:
@@ -422,12 +393,3 @@ if __name__ == "__main__":
     ]
     print(prompt)
     
-    # response = get_gpt_response(messages=messages)
-    # response = get_glm_response(messages=msg)
-    # response = get_response(messages=messages)
-    # print(response)
-    # glm 不行可以输出框，然后计算框的中心
-    # print(system_prompt)
-    # 75/1000*1080 = 81
-    # 325/1000*2376 = 772
-    # 450/1000*2376 = 1068

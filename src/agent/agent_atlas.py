@@ -12,25 +12,16 @@ logger = logging.getLogger(__name__)
 
 MAX_RETRIES = 5
 
-# atlas需要反归一化click坐标
-
 def extract_numbers(s):
     """提取字符串中的所有连续数字串"""
     return re.findall(r'\d+', s)
 
-def extract_before_heading(text):
-    # 使用###分割字符串，取分割后的第一个部分
-    parts = text.split("###", 1)  # 第二个参数1表示最多分割一次
-    if len(parts) > 1:
-        return parts[0].strip()  # 返回分割后的第一部分并去除前后空格
-    return text.strip()  # 如果没有找到###，返回原字符串（去除空格）
 
 def get_response(model, messages, api_key, base_url, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
-
+  
     client = OpenAI(api_key=api_key, base_url=base_url)
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2 
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -92,14 +83,13 @@ class AtlasAgent:
         self.base_url = agent_config['base_url']
         self.system_prompt = agent_config['system_prompt']
         self.task = None
-        self.history = []  # 任务记忆结构
+        self.history = []  
         
     def set_task(self, task):
-        self.task = task  # 任务查询
-        self.history = []  # 任务记忆结构
+        self.task = task  
+        self.history = []  
         
     def parse_user_input(self, input_str, img_width, img_height):
-        # {"name": <function-name>, "arguments": <args-json-object>
         """解析用户输入的格式"""
 
         try:
@@ -117,14 +107,14 @@ class AtlasAgent:
                 return result
             
             input_lists = input_str.replace('[[', '[').replace(']]', ']').split('[')
-            action_type = input_lists[0].strip().lower()  # 提取动作类型并去除多余空格
-            action_str = '[' + input_lists[1]  # 提取动作部分
-            match_s = re.search(r'\[(.*)\]', action_str)  # 提取最外层的[]
+            action_type = input_lists[0].strip().lower()  
+            action_str = '[' + input_lists[1]  
+            match_s = re.search(r'\[(.*)\]', action_str)  
             if match_s:
                 action_s = match_s.group(1).strip()
             else:
                 action_s = action_str.lstrip('[').split(']')[0].strip()
-            logger.info(f'action: {action_type} and {action_s}')  # 得到动作部分
+            logger.info(f'action: {action_type} and {action_s}')  
 
             if 'click' in action_type:
                 positions = action_s.split(',')
@@ -170,7 +160,6 @@ class AtlasAgent:
 
     def scale_image(image_path, scale=0.25):
         """将图片缩放到指定比例，返回PIL Image对象"""
-        # 展示使用的，可以保存使用？倒也不必
         try:
             with Image.open(image_path) as img:
                 new_width = int(img.width * scale)
@@ -184,7 +173,6 @@ class AtlasAgent:
     def agent_step(self, image_path):
         """调用大模型获取操作建议"""
         try:
-            # 读取并编码图片
             with Image.open(image_path) as img:
                 img_width, img_height = img.size
             with open(image_path, "rb") as image_file:
@@ -194,20 +182,6 @@ class AtlasAgent:
             if self.history!= []:
                 history = ''.join([f'Step {si+1}: {content}; 'for si, content in enumerate(self.history)])
                 user_prompt += f'\nAction History: {history}.\n'
-                # user_prompt += f'\nHistory action descriptions of task progress (You have done the following operation on the current device): {history}.\n'
-                # if enable_think:
-                #     user_prompt += f'\nBefore answering, explain your reasoning step-by-step in {think_tag_begin}{think_tag_end} tags, and insert them before the <tool_call></tool_call> XML tags.'
-                # user_prompt += '\nAfter answering, summarize your action in <thinking></thinking> tags, and insert them after the <tool_call></tool_call> XML tags.'
-                # if self.model == 'qwen':
-                # user_prompt += '\nAttention! Some applications may take time to start or process actions, so you may need to wait and take successive screenshots to see the results of your actions. You must use the Chinese name of the app to open an app. You can open the specified app (in Chinese name) at any page.'  # open: Open an app on the device.
-                # user_prompt += '\n\nResponse as the following format:\nThoughts: Clearly outline your reasoning process for current step.\nActions: Specify the actual actions you will take based on your reasoning. You should follow action format when generating.'
-            
-            # {
-            #         "role": "system",
-            #         "content": [
-            #             {"type": "text", "text": self.system_prompt.format(width=img_width, height=img_height)},
-            #         ],
-            #     },
             msg = [
                 {
                     "role": "user",
@@ -221,13 +195,12 @@ class AtlasAgent:
             
             # logger.info(f"Vanilla Agent Prompt:\n {msg}")
             logger.info(f"Current image path: {image_path}")
-            # print(self.model, self.base_url)
             response = get_response(model=self.model,messages=msg,api_key=self.api_key, base_url=self.base_url)
             logger.info(f"Raw Response:\n {response}")
 
             action, action_thought = self.parse_extract_response(response)
 
-            self.history.append(f'action:{action}, action_thought:{action_thought}')  # 更新任务记忆结构
+            self.history.append(f'action:{action}, action_thought:{action_thought}')  
             action = self.parse_user_input(action, img_width, img_height)
             logger.info(f"Parsed action: {action}")
             return action, action_thought
@@ -237,10 +210,7 @@ class AtlasAgent:
             return None, None
 
     def parse_extract_response(self, response):
-        # 使用###分割字符串，取分割后的第一个部分
-        # 从答案中提取出Thought和Action，Thought作为action_description，Action作为action
         response = response.replace('Thoughts:', 'thoughts:').replace('Actions:', 'actions:')
-        # print(f"修改后: {response}")
         try:
             match1 = re.search(r'thoughts:(.*)actions:', response, re.DOTALL)
             if match1:
