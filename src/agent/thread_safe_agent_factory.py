@@ -28,7 +28,7 @@ class ThreadSafeAgentFactory:
         :param model_name: 模型名称
         :return: 智能体实例
         """
-        # 为每个线程创建独立的智能体实例
+
         thread_id = threading.current_thread().ident
         
         if not hasattr(self._local, 'agents'):
@@ -118,11 +118,9 @@ class ThreadSafeTaskExecutor:
         try:
             logger.info(f"Thread {thread_id}: Starting task {task_id}: {task}")
             
-            # 获取线程安全的智能体和图数据集
             agent = self.agent_factory.get_agent(mode, model_name)
             graph_dataset = self.graph_factory.get_graph_dataset()
             
-            # 设置任务
             graph_dataset.set_task(task)
             agent.set_task(task)
             
@@ -208,6 +206,6 @@ class ThreadSafeTaskExecutor:
                 'thread_id': thread_id
             }
         finally:
-            # 清理线程资源
+            # clear thread-specific resources
             self.agent_factory.clear_thread_agents()
             self.graph_factory.clear_thread_dataset()

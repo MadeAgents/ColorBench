@@ -29,7 +29,7 @@ logger.info(f"Model loaded Successfully!")
 agent = LLMClient()
 use_threading = False
 
-nodes_save_path = './data/results/nodes/'  # 节点保存路径(包含图片)
+nodes_save_path = './data/results/nodes/' 
 
 class ScreenNode:
     def __init__(self, data=None, node_id=-1, app=None):
@@ -174,9 +174,6 @@ class ScreenShot:
             shutil.copy2(self.screenshot_path, os.path.join(save_path, new_name))  
 
     def _generate_description_zh(self, img):
-        # 使用llm对当前页面做出一个描述
-        # UI布局和文本内容
-        # 布局，包含不同的 UI 组件、文本按钮概念和图标类
         messages = [{
             "role": "system",
             "content": [
@@ -201,7 +198,6 @@ class ScreenShot:
     def get_screenshot_info(self):
         return {
             'screenshot_path': self.screenshot_path,
-            # 'base64_image': self.base64_image,
             'node_description': self.description
         }
 
@@ -244,8 +240,6 @@ class UIElementEdge:
             'target_node': self.target_node,
             'action_type': self.action_type,
             'action_parameter': self.action_parameter,
-            # 'action_box': self.action_box,
-            # 'action_description': self.action_description,
         }
         return edge_info
 
@@ -255,7 +249,6 @@ class UIElementEdge:
         self.action_type = edge_info['action_type']
         self.action_parameter = edge_info['action_parameter']
         self.action_box = []
-        # self.action_description = edge_info['action_description']
     
     def __eq__(self, other):
         if not isinstance(other, UIElementEdge):
@@ -280,8 +273,7 @@ class UIElementEdge:
 
 class Graph:
     def __init__(self, max_nodes=1000, app=None):
-        self.nodes = {}  
-        # self.max_nodes = max_nodes
+        self.nodes = {}
         self.next_id = 0  
         self.home_id = 0  # default home node id 0
         self.app = app
@@ -305,7 +297,7 @@ class Graph:
                     logger.info(f"Edge from node {last_node} already exists, not adding duplicate.")
                     del self.nodes[last_node].ui_element_edge_list[last_edge]
                 if newnode.node_id!=last_node:
-                    self.add_back_edge(source_id=newnode.node_id, target_id=last_node)  # 增加回边
+                    self.add_back_edge(source_id=newnode.node_id, target_id=last_node) 
                 else:
                     pass
 
@@ -373,12 +365,12 @@ class Graph:
             # construct new object
             new_tmp_node = ScreenNode(data, app=self.app)
 
-            # 如果你的轨迹起点相同，直接合并到同一节点或者选择跳过
+            # If the first step of your trajectory is always the same, you can choose to directly merge or skip
             # if new_trajectory and len(self.nodes)!=0:
             #     last_edge, last_node = self.merge_to_node(new_tmp_node, 0, new_trajectory, last_node, last_edge)
             #     return last_edge, last_node
             
-            # 如果你的轨迹第二个点都是同一个APP，也可以选择直接合并或者选择跳过
+            # If the second step of your trajectory is always the same app, you can choose to directly merge or skip
             # if step==1:
             #     last_edge, last_node = self.merge_to_node(new_tmp_node, 1, new_trajectory, last_node, last_edge)
             #     return last_edge, last_node
@@ -386,14 +378,12 @@ class Graph:
   
             similar_node_id = self.find_similar_node(new_tmp_node, threshold) 
             if similar_node_id != -1:
-                # 合并到相似的节点下面
                 last_edge, last_node = self.merge_to_node(new_tmp_node, similar_node_id, new_trajectory, last_node, last_edge)
                 logger.info(f"Merge to node with ID {similar_node_id}")
             else:
                 last_edge, last_node = self.add_node(new_tmp_node, new_trajectory, last_node, last_edge)
                 logger.info(f"Added new node with ID {self.next_id-1}")
 
-            # 额外还需要的东西有：
             return last_edge, last_node
         except Exception as e:
             logger.error(f"Graph update失败: {e}")
@@ -429,13 +419,11 @@ class Graph:
         return self.nodes.get(page_id)
 
     def save_graph(self, save_path):
-        """图保存功能"""
         graph_data = {
             'metadata': {
                 'created_at': datetime.now().isoformat(),
                 'num_nodes': len(self.nodes),
-                'app': self.app,
-                # 'max_nodes': self.max_nodes,  
+                'app': self.app, 
                 'next_id': self.next_id
             },
             'nodes': {node_id: node.get_node_info() for node_id, node in self.nodes.items()}
@@ -445,7 +433,6 @@ class Graph:
             json.dump(graph_data, f, indent=4, ensure_ascii=False, default=str)
         
     def load_graph(self, load_path):
-        """从文件加载图结构"""
         try:
             if load_path.endswith('.gz'):
                 with gzip.open(load_path, 'rt', encoding='utf-8') as f:
@@ -503,9 +490,9 @@ class Graph:
 if __name__ == "__main__":
     import time
     agent = LLMClient()
-    with open('/home/notebook/code/personal/S9060045/demonstration_based_learning/data/examples/myphoto/1aa2399eb9296d74f3f0ba34f704a900.jpg', "rb") as img_file:
+    with open('', "rb") as img_file:
         a_img = base64.b64encode(img_file.read()).decode('utf-8')
-    with open('/home/notebook/code/personal/S9060045/demonstration_based_learning/data/examples/myphoto/398b474e729282fbb6fd5097e03a0a81.jpg', "rb") as img_file:
+    with open('', "rb") as img_file:
         b_img = base64.b64encode(img_file.read()).decode('utf-8')
     logger.info("图片已加载，开始生成描述...")
 

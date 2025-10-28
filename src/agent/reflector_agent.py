@@ -65,8 +65,6 @@ class ReflectorAgent:
         """Reflect on the executed action and its results"""
         try:
             # Read and encode current image
-            # with Image.open(current_image_path) as img:
-            #     cur_img_width, cur_img_height = img.size
             with open(current_image_path, "rb") as image_file:
                 cur_encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
             # Read and encode previous image if available
@@ -75,7 +73,7 @@ class ReflectorAgent:
             with open(pre_image_path, "rb") as image_file:
                 pre_encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
             
-            # Build reflection history context 反思历史？
+            # Build reflection history context 
             # history_context = ""
             # if self.execution_history:
             #     history_context = "Previous execution history:\n"
@@ -88,7 +86,7 @@ class ReflectorAgent:
             #     for i, reflection in enumerate(self.reflection_history, 1):
             #         history_context += f"Step {i} Reflection: {reflection.get('success_evaluation', 'N/A')}\n"
             #         history_context += f"Progress: {reflection.get('progress_assessment', 'N/A')}\n"
-            # {history_context}
+           
             # Build reflection prompt
             reflection_prompt_before = f"""You are a reflective agent in a GUI intelligent system. Given the user query, the previous step's task plan and action, as well as the screenshots before and after the actions, you need to analyze whether any errors occurred in this step from three aspects: task objective, task planning, and task execution. If errors are found, you need to provide improvement suggestions for both the task planning and task execution.  Please ensure that your output strictly adheres to the format requirements.
 
@@ -130,9 +128,6 @@ The changes between the two screenshots should correspond to the given plan and 
             ]
             
             logger.info(f"Reflection agent analyzing: {pre_image_path} and {current_image_path}")
-            # print(f'Reflection agent prompt:')
-            # print(reflection_prompt)
-            # print(f"Reflection agent prompt:\nYou are an expert mobile GUI automation analyst. Analyze action results and provide constructive feedback for improvement.\n{reflection_prompt_before}...[images]...{reflection_prompt_after}")
             logger.info(f"Reflection agent prompt:\nYou are an expert mobile GUI automation analyst. Analyze action results and provide constructive feedback for improvement.\n{reflection_prompt_before}...[images]...{reflection_prompt_after}")
             response = get_response(
                 model=self.model,

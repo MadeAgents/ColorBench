@@ -37,7 +37,6 @@ class PlanReflectAgent:
                 self.memory = MemoryAgentGLM(agent_config)
             else:
                 self.memory = MemoryAgent(agent_config)
-            # raise NotImplementedError("Memory functionality is not implemented in PlanReflectAgent yet")
         
         # Step tracking (thread-safe)
         self.current_step = 0
@@ -63,7 +62,7 @@ class PlanReflectAgent:
         """Execute one complete step: Plan -> Execute -> Reflect (thread-safe)"""
         with self._lock:
             try:
-                self.current_step += 1  # 第一步就是1
+                self.current_step += 1  
                 thread_id = threading.current_thread().ident
                 logger.info(f"Thread {thread_id}: === Starting Step {self.current_step} ===")
                 step_info = {
@@ -91,7 +90,6 @@ class PlanReflectAgent:
                     if reflection_error:
                         logger.warning(f"Thread {thread_id}: Reflection failed: {reflection_error}")
                         reflection_result = None
-                        # return None, None, f"Reflection error: {reflection_error}"
                     else:
                         step_info['planning_reflection'] = reflection_result.get('planning_reflection', 'No planning reflection')
                         step_info['execution_reflection'] = reflection_result.get('execution_reflection', 'No execution reflection')
@@ -103,12 +101,11 @@ class PlanReflectAgent:
                     logger.info(f"Thread {thread_id}: Step 1: Planning...")
                     if self.use_reflect and self.current_step > 1:
                         planning_reflection = reflection_result.get('planning_reflection', None) if reflection_result else None
-                    planning_result, planning_error = self.planner.plan_next_action(image_path, planning_reflection if self.use_reflect and self.current_step > 1 else None)  # 上一步的反思内容，过往的action和action description
+                    planning_result, planning_error = self.planner.plan_next_action(image_path, planning_reflection if self.use_reflect and self.current_step > 1 else None) 
 
                     if planning_error:
                         logger.error(f"Thread {thread_id}: Planning failed: {planning_error}")
                         planning_result = None
-                        # return None, None, f"Planning error: {planning_error}"
                     else:
                         step_info['planning'] = planning_result.get('action_plan', 'No action plan')
                 
@@ -137,8 +134,6 @@ class PlanReflectAgent:
                 if self.use_memory:
                     planning_context = planning_result.get('action_plan', None) if self.use_plan and planning_result else None
                     memory_content, memory_error = self.memory.get_memory(image_path, planning_context, action=executed_action, action_description=action_description)
-                    # 给当前任务和当前截图，输出一些关键的信息，存入当前任务的记忆库
-                    # raise NotImplementedError("Memory functionality is not implemented in PlanReflectAgent yet")
                     if memory_error:
                         logger.error(f"Thread {thread_id}: Memory generation failed: {memory_error}")
                         memory_content = None
@@ -154,18 +149,9 @@ class PlanReflectAgent:
                 self.executor.update_history(action=executed_action, action_description=action_description, memory=memory)
                 if self.use_reflect and self.current_step > 1:
                     self.reflector.update_history(reflection_result,action=executed_action, action_description=action_description, memory=memory)
-                # if self.use_memory:
-                #     raise NotImplementedError("Memory functionality is not implemented in PlanReflectAgent yet")
                 
-                # Log step completion
-                # logger.info(f"Thread {thread_id}: === Step {self.current_step} Completed ===")
-                # logger.info(f"Thread {thread_id}: Planned: {planning_result['action_plan']}")
-                # logger.info(f"Thread {thread_id}: Executed: {action_description}")
-                # if reflection_result:
-                #     logger.info(f"Thread {thread_id}: Reflected: {reflection_result['success_evaluation']}")
                 logger.info(f"Thread {thread_id}: Step {self.current_step} Completed.")
                 logger.info(f"Thread {thread_id}: Step Information: {json.dumps(step_info, ensure_ascii=False, indent=4)}")
-                # logger.info(json.dumps(step_info, ensure_ascii=False, indent=2))
                 
                 return executed_action, action_description, None
                 

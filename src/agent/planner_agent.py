@@ -69,11 +69,11 @@ class PlannerAgent:
             with open(image_path, "rb") as image_file:
                 encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
             
-            # Build history context - 使用完整历史轨迹
+            # Build history context 
             history_context = ""
             history_memory = ""
             if self.execution_history:
-                for i, step in enumerate(self.execution_history, 1):  # 完整历史轨迹
+                for i, step in enumerate(self.execution_history, 1): 
                     history_context += f"Step {i}: Action: {step['action']}; Action description: {step['action_description']}\n"
                     if step['memory']:
                         history_memory += f"    ({i}). {step['memory']}\n"
@@ -82,9 +82,6 @@ class PlannerAgent:
             if history_memory:
                 history_memory = history_memory.rstrip('\n')
             
-            # Create planning prompt
-            # You are a Planning Agent. You task is to Analyze the screen and plan the next action based on the complete execution history and last reflection result. 你是一个GUI智能体系统中的任务规划智能体。你的任务是根据给定的用户任务，通过分析历史轨迹、当前屏幕截图和可能任务历史记忆，参考上一步的反思建议，制定下一步的行动计划，以完成用户所给的任务指令。请确保每次只输出一个行动计划，并严格遵守格式要求。
-            # 2. Screen resolution: {img_width}x{img_height}
             planning_prompt = f"""You are a task-planning agent in a GUI intelligent system. Your task is to formulate the next action plan based on the given user task by analyzing the historical trajectory, the current screenshot, and possible task history memory, while referring to the reflection suggestions from the previous step. Please ensure that you output only one action plan and strictly adhere to the format requirements.
 
 ### Background Information 
@@ -125,9 +122,6 @@ class PlannerAgent:
             ]
             
             logger.info(f"Planning agent analyzing: {image_path}")
-            # print(f'Planning agent prompt:')
-            # print(planning_prompt)
-            # logger.info(f"Planning agent prompt:\nYou are an expert mobile GUI automation planner. Analyze screenshots and create strategic action plans.\n{planning_prompt}")
             response = get_response(
                 model=self.model,
                 messages=messages,

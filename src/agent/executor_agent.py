@@ -89,7 +89,7 @@ class ExecutorAgent:
             history_context = ""
             history_memory = ""
             if self.execution_history:
-                for i, step in enumerate(self.execution_history, 1):  # 完整历史轨迹
+                for i, step in enumerate(self.execution_history, 1): 
                     history_context += f"Step {i}: Action: {step['action']}; Action description: {step['action_description']}\n"
                     if step['memory']:
                         history_memory += f"    ({i}). {step['memory']}\n"
@@ -137,9 +137,6 @@ Based on the above information, please analyze the current screen and output act
             ]
             
             logger.info(f"Execution agent executing: {image_path}")
-            # print(f'Execution agent prompt:')
-            # print(self.system_prompt.format(width=img_width, height=img_height))
-            # print(execution_prompt)
             logger.info(f"Execution agent prompt:\n{self.system_prompt.format(width=img_width, height=img_height)}\n{execution_prompt}")
             response = get_response(
                 model=self.model,
@@ -186,7 +183,6 @@ Based on the above information, please analyze the current screen and output act
     
     def _parse_user_input(self, input_str):
         """Parse user input format into action dictionary"""
-        # 将
         try:
             if not input_str:
                 return None

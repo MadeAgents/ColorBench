@@ -16,20 +16,10 @@ def extract_numbers(s):
     """提取字符串中的所有连续数字串"""
     return re.findall(r'\d+', s)
 
-
-def extract_before_heading(text):
-    # 使用###分割字符串，取分割后的第一个部分
-    parts = text.split("###", 1)  # 第二个参数1表示最多分割一次
-    if len(parts) > 1:
-        return parts[0].strip()  # 返回分割后的第一部分并去除前后空格
-    return text.strip()  # 如果没有找到###，返回原字符串（去除空格）
-
 def get_response(model, messages, api_key, base_url, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
-
     client = OpenAI(api_key=api_key, base_url=base_url)
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2 
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -82,11 +72,11 @@ class TarsAgent:
         self.base_url = agent_config['base_url']
         self.system_prompt = agent_config['system_prompt']
         self.task = None
-        self.history = []  # 任务记忆结构
+        self.history = []  
         
     def set_task(self, task):
-        self.task = task  # 任务查询
-        self.history = []  # 任务记忆结构
+        self.task = task  
+        self.history = []  
         
     def parse_user_input(self, input_str):
         # {"name": <function-name>, "arguments": <args-json-object>
@@ -106,26 +96,21 @@ class TarsAgent:
                 result = {'action_type': 'complete', 'status': 'success'}
                 return result
             
-            # input_lists = input_str.split('(')  #修改为只按照第一个split
-            input_lists = re.split(r'\s*\(\s*', input_str, maxsplit=1)  # 修改为只按照第一个split，并去除多余空格
-            # print(input_lists)
+          
+            input_lists = re.split(r'\s*\(\s*', input_str, maxsplit=1)  
             if len(input_lists) < 2:
                 logger.warning(f"无法解析用户输入: {input_str}, default to wait action.")
                 return {'action_type': 'wait'}
-            action_type = input_lists[0].strip().lower()  # 提取动作类型并去除多余空格
-            action_str = '(' + input_lists[1]  # 提取动作部分
-            match_s = re.search(r'\((.*)\)', action_str)  # 提取最外层的()
+            action_type = input_lists[0].strip().lower()  
+            action_str = '(' + input_lists[1] 
+            match_s = re.search(r'\((.*)\)', action_str) 
             if match_s:
                 action_s = match_s.group(1).strip()
             else:
                 action_s = action_str.lstrip('(').split(')')[0].strip()
-            logger.info(f'action: {action_type} and action parameter: {action_s}')  # 得到动作部分
+            logger.info(f'action: {action_type} and action parameter: {action_s}')  #
 
             if 'click' in action_type:
-                # match_p = re.search(r'<point>(.*)</point>', action_str)  # 提取最外层的[]
-                # if match_p:
-                #     action_s = match_p.group(1).strip()
-                # positions = action_s.split(' ')
                 match_p = re.search(r'\((.*)\)', action_s)  # 提取最外层的[]
                 if match_p:
                     action_s = match_p.group(1).strip()
@@ -135,7 +120,6 @@ class TarsAgent:
                         action_s = match_b.group(1).strip()
                 else:
                     action_s = match_p.strip('(').strip(')').strip()
-                # print(action_s)
                 coords = re.findall(r'-?\d+', action_s)
                 if len(coords) >= 2:
                     x = int(coords[0])
@@ -148,16 +132,8 @@ class TarsAgent:
                 else:
                     logger.warning(f"坐标提取失败: {action_s}")
                     result = {'action_type': 'wait'}
-                # positions = action_s.split(',')
-                # x = positions[0]
-                # y = positions[-1]
-                # result = {
-                #     'action_type': 'click',
-                #     'x': x,
-                #     'y': y
-                # }
             elif 'long_press' in action_type:
-                match_p = re.search(r'\((.*)\)', action_s)  # 提取最外层的[]
+                match_p = re.search(r'\((.*)\)', action_s) 
                 if match_p:
                     action_s = match_p.group(1).strip()
                 else:
@@ -198,7 +174,6 @@ class TarsAgent:
 
     def scale_image(image_path, scale=0.25):
         """将图片缩放到指定比例，返回PIL Image对象"""
-        # 展示使用的，可以保存使用？倒也不必
         try:
             with Image.open(image_path) as img:
                 new_width = int(img.width * scale)
@@ -212,7 +187,6 @@ class TarsAgent:
     def agent_step(self, image_path):
         """调用大模型获取操作建议"""
         try:
-            # 读取并编码图片
             with Image.open(image_path) as img:
                 img_width, img_height = img.size
             with open(image_path, "rb") as image_file:
@@ -224,14 +198,7 @@ class TarsAgent:
                 user_prompt += f'\n## Action History:\n{history}.\n'
             else:
                 history = 'The task has not been started yet.'
-            
-            # {
-            #         "role": "system",
-            #         "content": [
-            #             {"type": "text", "text": self.system_prompt.format(width=img_width, height=img_height)},
-            #         ],
-            #     },
-
+        
             user_prompt += '\n\nResponse as the following format:\nThoughts: Write a small plan and finally summarize your next action.\nActions: Specify the actual actions and follow the format in `Action Space`.'
 
             msg = [
@@ -247,13 +214,12 @@ class TarsAgent:
             
             # logger.info(f"Vanilla Agent Prompt:\n {msg}")
             logger.info(f"Current image path: {image_path}")
-            # print(self.model, self.base_url)
             response = get_response(model=self.model,messages=msg,api_key=self.api_key, base_url=self.base_url)
             logger.info(f"Raw Response:\n {response}")
 
             action, action_thought = self.parse_extract_response(response)
 
-            self.history.append(f'action:{action}, action_thought:{action_thought}')  # 更新任务记忆结构
+            self.history.append(f'action:{action}, action_thought:{action_thought}') 
             action = self.parse_user_input(action)
             logger.info(f"Parsed action: {action}")
             return action, action_thought
@@ -263,10 +229,7 @@ class TarsAgent:
             return None, None
 
     def parse_extract_response(self, response):
-        # 使用###分割字符串，取分割后的第一个部分
-        # 从答案中提取出Thought和Action，Thought作为action_description，Action作为action
         response = response.replace('Thought:', 'thought:').replace('Action:', 'action:').replace('（','(').replace('）',')')
-        # print(f"修改后: {response}")
         try:
             match1 = re.search(r'thought:(.*)action:', response, re.DOTALL)
             if match1:

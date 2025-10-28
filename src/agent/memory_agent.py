@@ -69,7 +69,7 @@ class MemoryAgent:
             with open(image_path, "rb") as image_file:
                 encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
             
-            # # Build history context - 使用完整历史轨迹
+            # Build history context 
             # history_context = ""
             # history_memory = ""
             # if self.execution_history:
@@ -82,9 +82,6 @@ class MemoryAgent:
             # if history_memory:
             #     history_memory = history_memory.rstrip('\n')
 
-            # Create planning prompt
-            # You are a Planning Agent. You task is to Analyze the screen and plan the next action based on the complete execution history and last reflection result. 你是一个GUI智能体系统中的记忆智能体。给定用户任务，上一步任务规划以及当前屏幕截图，你需要是为未来的操作记住的重要信息。记忆内容应仅限于将来操作中会使用的屏幕内容。它应满足以下条件：没有这些记忆，你无法确定一个或多个未来的操作。
-            # 2. Screen resolution: {img_width}x{img_height}
             if not cur_planning and action_description:
                 cur_planning = action_description
             memory_prompt = f"""

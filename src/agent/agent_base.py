@@ -15,11 +15,10 @@ logger = logging.getLogger(__name__)
 MAX_RETRIES = 5
 
 def get_response(model, messages, api_key, base_url, temperature=0.1, top_k=5, top_p=0.9):
-    # top_k越小越确定，top_p越大越多样(一般不会太大）
 
     client = OpenAI(api_key=api_key, base_url=base_url)
     retries = 0
-    retry_delay = 2  # 初始重试延迟时间（秒）
+    retry_delay = 2 
     while retries<= MAX_RETRIES:
         try:
             response = client.chat.completions.create(
@@ -140,7 +139,7 @@ class AgentBase(ABC):
 
 if __name__ == "__main__":
 
-    image_path = '/home/notebook/code/personal/S9060045/demonstration_based_learning/final_graph_images_919/update_by_hand_Screenshot_2025-09-08-12-52-48-00_b783bf344239542886fee7b48fa4b892.jpg'
+    image_path = ''
 
     with Image.open(image_path) as img:
         img_width, img_height = img.size
