@@ -4,10 +4,10 @@ import os
 from PIL import Image
 import re
 import ast
-from datetime import datetime  # 导入datetime模块处理时间戳
+from datetime import datetime
 
 # 定义统一的存储路径
-BASE_RECORD_PATH = os.path.join(".", "graph_images") # "aiagent2"
+BASE_RECORD_PATH = os.path.join(".", "graph_images")
 # 确保存储目录存在
 os.makedirs(BASE_RECORD_PATH, exist_ok=True)
 

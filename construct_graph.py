@@ -82,7 +82,7 @@ def main():
         help="Path to save results.",
     )  
 
-    log_file_path = '/home/notebook/code/personal/S9060045/demonstration_based_learning/data/results/meituan.log'
+    log_file_path = './results/construct_graph.log'
     setup_logging(log_file_path)
     logger = logging.getLogger(__name__)
     logger.info("Progress Start!")
@@ -91,10 +91,9 @@ def main():
 
     # If output file is not specified, create one based on input filename
     if args.input_folder is None:
-        input_folder = Path('/home/notebook/code/personal/S9060045/demonstration_based_learning/data/examples/meituan')
+        input_folder = Path('./examples/trajectories')
     if args.output_file is None:
-        # output_path = input_path.parent / f"{input_path.stem}_graph.jsonl"
-        output_path = Path('/home/notebook/code/personal/S9060045/demonstration_based_learning/data/results/meituan.json')
+        output_path = Path('./results/graph.json')
     else:
         output_path = Path(args.output_file)
     
@@ -106,20 +105,12 @@ def main():
     logger.info(f"Input folder path: {input_folder}")
     logger.info(f"Output file: {output_path}")
 
-    graph = Graph(app='美团')   
-    graph.load_graph('/home/notebook/code/personal/S9060045/demonstration_based_learning/data/results/meituan820.json')
-    logger.info("Successfully load the graph!")
-    graph.save_graph(save_path=output_path)
+    graph = Graph(app='美团')
     task_dirs = os.listdir(input_folder) 
 
-    continue_flag = False
     for task_dir in task_dirs:
         if task_dir.endswith('.json'):
             continue
-        # if task_dir == 'general_20250812_thread0_1d45367fb4474f3bb20982ba41c98242':
-        #     continue_flag = True
-        # if not continue_flag:
-        #     continue
 
         task_json = os.path.join(input_folder, task_dir, f'{task_dir}.json')  
         logger.info(f"Processing task directory: {task_dir}")

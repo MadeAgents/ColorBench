@@ -97,7 +97,7 @@ class ImageJumpParser:
 
 class ImageAnalyzer:
     def __init__(self, image_dir=None, output_dir="aiagent3", 
-                 openai_base_url="http://innoday-demo.oppo.test/v1", api_key="empty",
+                 openai_base_url="http://your-api-endpoint/v1", api_key="empty",
                  min_box_size=10, max_box_ratio=0.2,
                  annotator_model1="gui-owl-32b",  # 倾向于较大边界框的模型
                  annotator_model2="gui-owl-32b",  # 倾向于较小边界框的模型
@@ -830,8 +830,7 @@ def main():
     json_file = "/home/notebook/code/personal/S9060045/demonstration_based_learning/completely_graph_0909.json"  # JSON文件路径
     image_directory = "/home/notebook/code/personal/S9060045/demonstration_based_learning/data"  # 图片所在目录
     output_directory = "/home/notebook/code/personal/S9060045/demonstration_based_learning/aiagent09092"  # 输出文件夹
-    # openai_base_url = "http://innoday-demo.oppo.test/v1"  # 大模型服务地址
-    openai_base_url = "http://10.237.21.114:8000/v1"  # 大模型服务地址
+    openai_base_url = "http://your-api-endpoint/v1"  # 大模型服务地址
     api_key = "empty"  # API密钥
     min_box_size = 10  # 最小边界框尺寸（像素）
     max_box_ratio = 0.15  # 最大边界框占图片比例（15%）

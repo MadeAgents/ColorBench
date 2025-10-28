@@ -23,7 +23,8 @@
 
 ## 🧭 Overview
 
-![ColorBench](assets/graph.png)
+<!-- ![ColorBench](assets/graph.png) -->
+<img src="assets/graph.png" alt="ColorBench" width="90%">
 
 ### 📦 175 Complex Long-Horizon Tasks
 - 🌐 Covering **21 major apps** – WeChat, Meituan, JD, Xiaohongshu, etc.
@@ -102,11 +103,11 @@ Evaluation results are saved under `./checkpoints/`.
 
 ### 🧩 Graph-Structured Benchmark Construction
 
-#### 🔍 Breadth-First Search (BFS) Application Exploration
+#### Breadth-First Search (BFS) Application Exploration
 
 We use our self-developed Android device interaction environment **HammerEnv** for breadth-first application exploration. HammerEnv is a comprehensive Android device interaction environment that enables dynamic exploration and automated operations of mobile applications.
 
-#### 🛠️ Installation Steps
+#### Installation Steps
 
 1. **Download and install android_env and android_world open-source projects**:
 
@@ -134,7 +135,7 @@ python HammerEnv/src/server/gradio_web_server_physical_device.py
 python HammerEnv/examples/bfs_app_explorer_fixed.py
 ```
 
-#### ⚙️ Configuration
+#### Configuration
 
 ##### Exploration Configuration Parameters
 | Parameter | Description | Default Value |
@@ -160,7 +161,7 @@ python examples/bfs_app_explorer_fixed.py \
     --delay 2.0
 ```
 
-#### 🔍 Depth-First Search (DFS) Application Exploration
+#### Depth-First Search (DFS) Application Exploration
 
 To capture user long-horizon tasks, we manually capture sequences of mobile operation screenshots using a depth-first approach, then generate structured trajectory data through AI model analysis.
 
@@ -185,7 +186,7 @@ python src/graph_construction/pic2trajectory.py
 - **Trajectory File**: `dfs/trajectory/trajectory1/trajectory_v0.txt`
 - **Adjacency Matrix**: `dfs/trajectory/trajectory1/{query}.csv`
 
-#### 📁 Output Structure
+#### Output Structure
 
 The system generates well-organized trajectory data with the following structure:
 
@@ -201,34 +202,67 @@ trajectories/
     ├── Screenshot_2025-01-10-20-15-30_0.jpg
     └── Screenshot_2025-01-10-20-15-30_1.jpg
 ```
+#### Graph Construction
+To merge multiple trajectory files into a unified task graph, run:
+```bash
+python construct_graph.py --input_folder <trajectories> --output_file <path/to/graph.json>
+```
+During merging, we use the following default models:
 
----
+- models--BAAI--bge-large-zh-v1.5 for text feature embedding
+- Qwen2.5-VL-72B for visual-language understanding
 
-## 📄 File Format Descriptions
-
-### Trajectory File (JSON)
+You can modify these in ./src/graph_construction/graph.py according to your setup.
+The generated graph.json records all node and edge information in the following format:
 ```json
 {
-  "task": "Task description",
-  "trajectory": [
+  "node_id": ,
+  "screenlists": [
     {
-      "action": {"type": "click", "x": 100, "y": 200},
-      "screenshot": "base64-encoded screenshot",
-      "ui_elements": [
-        {"name": "button", "type": "button", "bounds": [0, 0, 100, 50]}
-      ]
+      "screenshot_path": "",
+      "node_description": ""
+    }
+  ],
+  "ui_element_edge_list": [
+    {
+      "source_node": ,
+      "target_node": ,
+      "action_type": "",
+      "action_parameter": {}
     }
   ]
 }
 ```
 
-### Adjacency Matrix (CSV)
-```csv
-,node1,node2,node3
-node1,0,{action1,action2},0
-node2,0,0,{action1,action2}
-node3,{action1,action2},0,0
+#### Frontend Inspection Tool
+
+After graph merging, you can manually inspect and adjust graph data using the frontend visualization tool. Convert the merged graph.json into a CSV file:
+
+- In ./src/graph_construction/parse_json_to_cvs.py, set
+json_file (path to graph JSON) and save_file (output CSV path).
+- In ./src/graph_construction/matrix_analyzer.py, set BASE_RECORD_PATH to your image directory.
+
+Run the following commands:
+```bash
+python src/graph_construction/parse_json_to_cvs.py
+python src/graph_construction/matrix_analyzer.py
 ```
+
+After manual corrections, convert the updated CSV file back into the JSON format for evaluation.
+```bash
+python src/graph_construction/matrix_to_json.py
+```
+
+#### Bounding Box Annotation
+Used for automatically generating bounding boxes for interface elements.
+- In src/graph_construction/image_jump_parser.py, modify the input paths in the main function: Path to the graph dataset JSON file；Path to the corresponding image folder
+- Set your model service API key;
+
+Run the following command:
+```bash
+python src/graph_construction/image_jump_parser.py
+```
+
 
 ---
 
@@ -262,7 +296,8 @@ If you use this project, please consider citing our paper:
 
 ## 🧭 概览
 
-![ColorBench](assets/graph.png)
+<!-- ![ColorBench](assets/graph.png) -->
+<img src="assets/graph.png" alt="ColorBench" width="90%">
 
 ### 📦 175 个复杂长程任务
 - 🌐 覆盖 **21 个主流应用** —— 微信、美团、京东、小红书等；
@@ -341,19 +376,19 @@ bash run_colorbench.sh
 
 ### 🧩 图结构评测构建
 
-#### 🔍 基于广度优先的应用探索
+#### 基于广度优先的应用探索
 
 我们使用自开发的安卓设备交互环境 **HammerEnv** 进行基于广度优先的应用探索。HammerEnv 是一个全面的安卓设备交互环境，可实现移动应用的动态探索和自动化操作。
 
-#### 📋 安装步骤
+#### 安装步骤
 
 
 1) **下载并安装 android_env、android_world 两个开源项目**:
-
+```plaintext
 https://github.com/google-deepmind/android_env
 https://github.com/google-research/android_world
 注：pip 安装时需要使用编辑模式 pip install -e . 
-
+```
 2) **配置ADB连接**:
 参见https://developer.android.com/tools
 
@@ -373,7 +408,7 @@ python HammerEnv/src/server/gradio_web_server_physical_device.py
 python HammerEnv/examples/bfs_app_explorer_fixed.py
 ```
 
-#### ⚙️ 配置
+#### 配置
 
 ##### 探索配置参数
 | 参数 | 描述 | 默认值 |
@@ -398,7 +433,7 @@ python examples/bfs_app_explorer_fixed.py \
     --output-dir "trajectories" \
     --delay 2.0
 ```
-#### 🔍 基于深度优先的应用探索
+#### 基于深度优先的应用探索
 
 为了捕捉用户长程任务，我们采用深度优先的方式手动截取操作手机的截图序列，然后通过 AI 模型分析生成结构化轨迹数据。
 
@@ -423,9 +458,7 @@ python src/graph_construction/pic2trajectory.py
 - **轨迹文件**：`dfs/trajectory/trajectory1/trajectory_v0.txt`
 - **邻接矩阵**：`dfs/trajectory/trajectory1/{query}.csv`
 
-
-
-#### 📁 输出结构
+#### 轨迹采集输出结构
 
 系统生成组织有序的轨迹数据，结构如下：
 
@@ -441,33 +474,62 @@ trajectories/
     ├── Screenshot_2025-01-10-20-15-30_0.jpg
     └── Screenshot_2025-01-10-20-15-30_1.jpg
 ```
+#### 图合并
+使用以下命令可将多个轨迹文件合并为一个完整的任务图：
+```bash
+python construct_graph.py --input_folder <trajectories> --output_file <path/to/graph.json>
+```
+合并过程中，我们默认使用了两种模型：
+- models--BAAI--bge-large-zh-v1.5（用于文本特征嵌入）
+- Qwen2.5-VL-72B（用于视觉语言理解）
 
----
-
-## 📄 文件格式说明
-
-### 轨迹文件（JSON）
+你可以在 ./src/graph_construction/graph.py 中修改为自己的模型配置。生成的 graph.json 文件记录了图中节点与边的详细信息，其中节点信息格式如下：
 ```json
 {
-  "task": "任务描述",
-  "trajectory": [
+  "node_id": ,
+  "screenlists": [
     {
-      "action": {"type": "click", "x": 100, "y": 200},
-      "screenshot": "base64编码截图",
-      "ui_elements": [
-        {"name": "按钮", "type": "button", "bounds": [0, 0, 100, 50]}
-      ]
+      "screenshot_path": "",
+      "node_description": ""
+    }
+  ],
+  "ui_element_edge_list": [
+    {
+      "source_node": ,
+      "target_node": ,
+      "action_type": "",
+      "action_parameter": {}
     }
   ]
 }
 ```
 
-### 邻接矩阵（CSV）
-```csv
-,node1,node2,node3
-node1,0,{action1,action2},0
-node2,0,0,{action1,action2}
-node3,{action1,action2},0,0
+#### 前端检测工具
+
+完成图合并后，可使用前端检测工具对图数据进行人工校验。首先，将合并得到的 graph.json 转换为 CSV 格式：
+- 修改 ./src/graph_construction/parse_json_to_cvs.py 中的
+json_file（输入图文件路径）与 save_file（输出 CSV 文件路径）。
+- 设置 ./src/graph_construction/matrix_analyzer.py 中的 BASE_RECORD_PATH 为图片所在路径。
+
+运行以下命令：
+```bash
+python src/graph_construction/parse_json_to_cvs.py
+python src/graph_construction/matrix_analyzer.py
+```
+
+最终将修改好的csv转回用于评测的json格式。
+```bash
+python src/graph_construction/matrix_to_json.py
+```
+
+#### 边界框标注
+用于为界面元素生成自动化的边界框标注。
+- 修改 src/graph_construction/image_jump_parser.py 文件中 main 函数的输入路径：图数据集 JSON 文件地址，图片文件夹路径；
+- 设置所使用的模型服务秘钥。
+
+运行以下命令完成自动标注：
+```bash
+python src/graph_construction/image_jump_parser.py
 ```
 
 ---
