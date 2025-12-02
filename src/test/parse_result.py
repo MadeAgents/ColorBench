@@ -136,7 +136,7 @@ def get_successful_certain_app_tasks_by_rule(checkpoint_path, tasks_milestone, a
                     continue
                 for node in pagenodes:
                     if node in screenshot_lists:
-                        ability_success_dicts[ability] += 1  # 表示成功了
+                        ability_success_dicts[ability] += 1  # 表示成功
                         successful_part_count += 1
                         ability_dicts[ability] += 1  # 能力总数
                         fail_ability.pop() # 成功了，把他删除掉

@@ -18,7 +18,7 @@
 ---
 
 ## 📢 最新动态
-- **[xx Oct '25]** 已开放核心代码与数据集（含评测环境及任务图）。
+- **[2 Dec '25]** 已开放核心代码与数据集（含评测环境及任务图）。
 - **[16 Oct '25]** 我们的论文 [*ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task*](https://arxiv.org/abs/2510.14621) 已发布在 arXiv！
 
 ---
@@ -270,7 +270,7 @@ python src/graph_construction/image_jump_parser.py
 > **ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task**  
 > [arXiv:2510.14621](https://arxiv.org/abs/2510.14621)
 
-📚 数据集链接：[HuggingFace 数据集（占位符）](https://huggingface.co/datasets/ColorBench)
+📚 数据集链接：[HuggingFace 数据集](https://huggingface.co/datasets/Norsheep/ColorBench)
 
 ---
 

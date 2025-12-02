@@ -19,7 +19,7 @@
 ---
 
 ## 📢 News
-- **[xx Oct '25]** Released the core code and dataset (including evaluation environment and benchmark graphs).
+- **[2 Dec '25]** Released the core code and dataset (including evaluation environment and benchmark graphs).
 - **[16 Oct '25]** Our paper [*ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task*](https://arxiv.org/abs/2510.14621) is now available on arXiv!
 
 ---
@@ -277,5 +277,5 @@ If you use this project, please consider citing our paper:
 > **ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task**  
 > [arXiv:2510.14621](https://arxiv.org/abs/2510.14621)
 
-📚 Dataset available at: [HuggingFace Dataset (Placeholder)](https://huggingface.co/datasets/ColorBench)
+📚 Dataset available at: [HuggingFace Dataset (Placeholder)](https://huggingface.co/datasets/Norsheep/ColorBench)
 ---
