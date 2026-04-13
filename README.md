@@ -4,7 +4,7 @@
 </p> -->
 
 
-# <a id="english-version"></a>🎨 ColorBench: Benchmarking Mobile Agents with Graph-Structured Framework for Complex Long-Horizon Tasks
+# <a id="english-version"></a>🎨 [WWW'26 Oral] ColorBench: Benchmarking Mobile Agents with Graph-Structured Framework for Complex Long-Horizon Tasks
 <p align="center">
   <a href="README.md">English</a> | <a href="README_zh.md">简体中文</a>
 </p>
@@ -277,5 +277,7 @@ If you use this project, please consider citing our paper:
 > **ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task**  
 > [arXiv:2510.14621](https://arxiv.org/abs/2510.14621)
 
-📚 Dataset available at: [HuggingFace Dataset (Placeholder)](https://huggingface.co/datasets/Norsheep/ColorBench)
+📚 Dataset available at: 
+
+[HuggingFace Dataset](https://huggingface.co/datasets/Norsheep/ColorBench)
 ---
