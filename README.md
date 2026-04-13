@@ -4,7 +4,7 @@
 </p> -->
 
 
-# <a id="english-version"></a>🎨 [WWW'26 Oral] ColorBench: Benchmarking Mobile Agents with Graph-Structured Framework for Complex Long-Horizon Tasks
+# <a id="english-version"></a>[WWW'26 Oral] ColorBench: Benchmarking Mobile Agents with Graph-Structured Framework for Complex Long-Horizon Tasks
 <p align="center">
   <a href="README.md">English</a> | <a href="README_zh.md">简体中文</a>
 </p>
@@ -273,11 +273,10 @@ python src/graph_construction/image_jump_parser.py
 
 Contributions via **Issues** or **Pull Requests** are welcome!
 If you use this project, please consider citing our paper:
-
-> **ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task**  
-> [arXiv:2510.14621](https://arxiv.org/abs/2510.14621)
+ 
+> [**ColorBench: Benchmarking Mobile Agents with Graph Structured Framework for Complex Long-Horizon Task**](https://arxiv.org/abs/2510.14621)
 
 📚 Dataset available at: 
 
-[HuggingFace Dataset](https://huggingface.co/datasets/Norsheep/ColorBench)
+> [**HuggingFace Dataset**](https://huggingface.co/datasets/Norsheep/ColorBench)
 ---
