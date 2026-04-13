@@ -87,7 +87,7 @@
   {
     "task_id": 4,
     "query": "小红书搜索广州旅游攻略，将第一个分享给小红书好友Hh源并询问“最想去哪个”，然后用小红书搜广州塔附近美食，记住第一家店名，去美团搜索该店，团一份双人套餐",
-    "optimal_steps": 8,
+    "optimal_steps": 30,
     "app_num": 2,
     "milestone": [
       {
@@ -119,7 +119,7 @@
   {
     "task_id": 5,
     "query": "小红书搜索广州旅游攻略，找到第一个，进入详情页收藏并点赞",
-    "optimal_steps": 13,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -145,7 +145,7 @@
   {
     "task_id": 6,
     "query": "小红书搜索广州旅游攻略，找到第一个，将博主主页分享给微信好友1",
-    "optimal_steps": 14,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -177,7 +177,7 @@
   {
     "task_id": 7,
     "query": "小红书搜索广州旅游攻略，找到第一个，看一下博主的粉丝与获赞与收藏数据，然后去告诉微信好友1",
-    "optimal_steps": 7,
+    "optimal_steps": 14
     "app_num": 2,
     "milestone": [
       {
@@ -229,7 +229,7 @@
   {
     "task_id": 9,
     "query": "小红书搜索广州旅游攻略，找到第一个，进入详情页，将封面图片保存至本地",
-    "optimal_steps": 10,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -255,7 +255,7 @@
   {
     "task_id": 10,
     "query": "小红书搜索广州旅游攻略，找到最多点赞、图文的第一个，进入详情页",
-    "optimal_steps": 28,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -281,7 +281,7 @@
   {
     "task_id": 11,
     "query": "用小红书搜广州塔附近美食，记住第一家店名，去美团团双人套餐",
-    "optimal_steps": 14,
+    "optimal_steps": 28,
     "app_num": 2,
     "milestone": [
       {
@@ -307,7 +307,7 @@
   {
     "task_id": 12,
     "query": "小红书搜索广州旅游攻略，找到第一个，转发至朋友圈，并设置仅自己可见，配文“广州走起！”",
-    "optimal_steps": 15,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -339,7 +339,7 @@
   {
     "task_id": 13,
     "query": "小红书搜索广州旅游攻略，复制第一个的链接，然后发给微信群聊好友群",
-    "optimal_steps": 7,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -371,7 +371,7 @@
   {
     "task_id": 14,
     "query": "小红书搜索广州旅游攻略，关注粉丝数大于80的广州旅行相关博主",
-    "optimal_steps": 10,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -429,7 +429,7 @@
   {
     "task_id": 16,
     "query": "小红书搜索广州旅游攻略，去问一问让ai回复，并将生成的内容发布笔记",
-    "optimal_steps": 12,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -461,7 +461,7 @@
   {
     "task_id": 17,
     "query": "美团搜索新斗记广州塔，将二人餐分享给微信好友1",
-    "optimal_steps": 30,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -488,7 +488,7 @@
   {
     "task_id": 18,
     "query": "在美团、大众点评、抖音对比新斗记广州塔双人餐的价格，然后将最便宜的一个转发分享给微信好友1",
-    "optimal_steps": 21,
+    "optimal_steps": 30,
     "app_num": 4,
     "milestone": [
       {
@@ -539,7 +539,7 @@
   {
     "task_id": 19,
     "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，配文“修猫”",
-    "optimal_steps": 24,
+    "optimal_steps": 21,
     "app_num": 2,
     "milestone": [
       {
@@ -573,7 +573,7 @@
   {
     "task_id": 20,
     "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，使用一键成片并配文“修猫”",
-    "optimal_steps": 17,
+    "optimal_steps": 24,
     "app_num": 2,
     "milestone": [
       {
@@ -607,7 +607,7 @@
   {
     "task_id": 21,
     "query": "去微信让好友1把昨天照的照片发过来，然后用这张图去小红书发布一条内容，并存为草稿",
-    "optimal_steps": 30,
+    "optimal_steps": 19,
     "app_num": 2,
     "milestone": [
       {
@@ -634,7 +634,7 @@
   {
     "task_id": 22,
     "query": "去美团搜八合里牛肉火锅，查看第一家店的双人套餐，把几个双人套餐都分享给微信好友1，分享完后让他“选一个”",
-    "optimal_steps": 16,
+    "optimal_steps": 30,
     "app_num": 2,
     "milestone": [
       {
@@ -684,7 +684,7 @@
   {
     "task_id": 23,
     "query": "帮我去美团点八合里牛肉火锅的外卖，要一份干炒牛河，不要餐具",
-    "optimal_steps": 12,
+    "optimal_steps": 16,
     "app_num": 1,
     "milestone": [
       {
@@ -717,7 +717,7 @@
   {
     "task_id": 24,
     "query": "去美团搜八合里牛肉火锅，查看第一家店的差评数量，把差评数量告诉微信好友1",
-    "optimal_steps": 16,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -737,7 +737,7 @@
   {
     "task_id": 25,
     "query": "去美团搜八合里牛肉火锅，使用投票选店将第一家店分享给微信的“好友群”，并将投票设置为群待办",
-    "optimal_steps": 18,
+    "optimal_steps": 16,
     "app_num": 2,
     "milestone": [
       {
@@ -769,7 +769,7 @@
   {
     "task_id": 26,
     "query": "去美团搜八合里牛肉火锅，选择第一家店，直接用高德地图导航过去",
-    "optimal_steps": 15,
+    "optimal_steps": 18,
     "app_num": 2,
     "milestone": [
       {
@@ -802,7 +802,7 @@
   {
     "task_id": 27,
     "query": "去美团搜索八合里牛肉火锅，将直播分享给微信好友1",
-    "optimal_steps": 33,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -828,7 +828,7 @@
   {
     "task_id": 28,
     "query": "去京东、淘宝、小红书查看oppo findx8s 12GB-512GB价格，并将最便宜的一个加入购物车，然后告诉微信好友1：已加入购物车",
-    "optimal_steps": 19,
+    "optimal_steps": 33,
     "app_num": 4,
     "milestone": [
       {
@@ -878,7 +878,7 @@
   {
     "task_id": 29,
     "query": "去京东OPPO官方旗舰店，在旗舰店中搜索OPPOfindx8s，查看配置16+512GB有什么颜色，然后去告诉微信好友1",
-    "optimal_steps": 10,
+    "optimal_steps": 19,
     "app_num": 2,
     "milestone": [
       {
@@ -910,7 +910,7 @@
   {
     "task_id": 30,
     "query": "去京东OPPO官方旗舰店，查看店铺详情中的二维码",
-    "optimal_steps": 12,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -968,7 +968,7 @@
   {
     "task_id": 32,
     "query": "去京东OPPO官方旗舰店，将主页分享给微信好友1",
-    "optimal_steps": 8,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -1007,7 +1007,7 @@
   {
     "task_id": 33,
     "query": "取消关注京东OPPO官方旗舰店",
-    "optimal_steps": 13,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -1027,7 +1027,7 @@
   {
     "task_id": 34,
     "query": "去淘宝买OPPOfindx8s，配置为海岛蓝、16GB+1TB（直接去购物车结算）",
-    "optimal_steps": 16,
+    "optimal_steps": 13,
     "app_num": 1,
     "milestone": [
       {
@@ -1061,7 +1061,7 @@
   {
     "task_id": 35,
     "query": "去淘宝用识图功能识别相册里的鼠标，把推荐的第一个加入购物车并去购物车结算",
-    "optimal_steps": 25,
+    "optimal_steps": 16,
     "app_num": 1,
     "milestone": [
       {
@@ -1094,7 +1094,7 @@
   {
     "task_id": 36,
     "query": "分别去京东、小红书、新增地址“华润前海大厦B座，小A，13311112222”，并设为默认地址",
-    "optimal_steps": 31,
+    "optimal_steps": 20,
     "app_num": 2,
     "milestone": [
       {
@@ -1126,7 +1126,7 @@
   {
     "task_id": 37,
     "query": "微信搜索OPPO，进入服务号查看内容，然后去京东OPPO官方旗舰店搜索微信服务号消息页最新推荐的产品，查看产品详情并下拉点击PK，将其与该服务号第二新推荐的产品PK，点击只看不同，然后将结果转发给微信好友1",
-    "optimal_steps": 8,
+    "optimal_steps": 31,
     "app_num": 2,
     "milestone": [
       {
@@ -1158,7 +1158,7 @@
   {
     "task_id": 38,
     "query": "微信搜索OPPO并关注服务号",
-    "optimal_steps": 16,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -1178,7 +1178,7 @@
   {
     "task_id": 39,
     "query": "帮我关注OPPO微信服务号，通过服务号查找服务网点与预约，导航到第一个内容（选择高德导航）",
-    "optimal_steps": 25,
+    "optimal_steps": 16,
     "app_num": 2,
     "milestone": [
       {
@@ -1230,7 +1230,7 @@
   {
     "task_id": 41,
     "query": "去小红书搜索OPPO手机推荐，筛选最多点赞的一条，点击喜欢，并去京东旗舰店搜该机型",
-    "optimal_steps": 0,
+    "optimal_steps": 25,
     "app_num": 2,
     "milestone": [
       {
@@ -1262,7 +1262,7 @@
   {
     "task_id": 42,
     "query": "将美团账号与微信账号绑定",
-    "optimal_steps": 17,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -1282,7 +1282,7 @@
   {
     "task_id": 43,
     "query": "去小红书搜索“七夕就在今天”，选择图文，收藏第一条内容",
-    "optimal_steps": 34,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -1309,7 +1309,7 @@
   {
     "task_id": 44,
     "query": "去美团外卖，点喜茶家的两份拿铁，记得用优惠券",
-    "optimal_steps": 0,
+    "optimal_steps": 17,
     "app_num": 1,
     "milestone": [
       {
@@ -1341,7 +1341,7 @@
   {
     "task_id": 45,
     "query": "比较一下京东和美团平台，在探唐烧烤点20串肥牛的价格，记得用券",
-    "optimal_steps": 0,
+    "optimal_steps": 34,
     "app_num": 2,
     "milestone": [
       {
@@ -1385,7 +1385,7 @@
   {
     "task_id": 46,
     "query": "在美团购买两张探唐烧烤翻身店的到店50元优惠券",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 1,
     "milestone": [
       {
@@ -1417,7 +1417,7 @@
   {
     "task_id": 47,
     "query": "打开美团搜探唐烧烤，记住到店第一家店的地址或者店名，用微信滴滴小程序打车过去",
-    "optimal_steps": 34,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -1449,7 +1449,7 @@
   {
     "task_id": 48,
     "query": "京东外卖搜索探唐烧烤，点击进入第一家，点击右上角转发给微信好友1",
-    "optimal_steps": 10,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -1481,7 +1481,7 @@
   {
     "task_id": 49,
     "query": "帮我分别用去哪儿旅行、美团、携程旅行搜索8月1日入住8月2日离开的上海凯宾斯基大酒店高级城景大床房价格哪个最便宜（直接从主界面搜索）",
-    "optimal_steps": 15,
+    "optimal_steps": 34,
     "app_num": 3,
     "milestone": [
       {
@@ -1545,7 +1545,7 @@
   {
     "task_id": 51,
     "query": "在美团直接搜索上海凯宾斯基大酒店，查看周边四星级酒店，选择其中337元的转发给微信好友1",
-    "optimal_steps": 14,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -1577,7 +1577,7 @@
   {
     "task_id": 52,
     "query": "在美团直接搜索上海凯宾斯基大酒店，查看其酒店电话并准备拨号",
-    "optimal_steps": 15,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -1610,7 +1610,7 @@
   {
     "task_id": 53,
     "query": "在美团直接搜索上海凯宾斯基大酒店并用高德导航过去，将高德地图设置为默认",
-    "optimal_steps": 20,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -1648,7 +1648,7 @@
   {
     "task_id": 54,
     "query": "在美团直接搜索上海凯宾斯基大酒店，查看其总评及差评数量。并告知微信好友1",
-    "optimal_steps": 14,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -1687,7 +1687,7 @@
   {
     "task_id": 55,
     "query": "帮我看一下万象前海牛排家牛市经济单人套餐在美团、大众点评的价格哪个最便宜，并告诉微信好友1",
-    "optimal_steps": 14,
+    "optimal_steps": 20,
     "app_num": 3,
     "milestone": [
       {
@@ -1720,7 +1720,7 @@
   {
     "task_id": 56,
     "query": "在美团上搜索万象前海牛排家，查看其“招牌干式熟成28天和牛M5短柄战斧双人套餐”的餐前面包是什么，并去告诉微信好友1",
-    "optimal_steps": 10,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -1766,7 +1766,7 @@
   {
     "task_id": 58,
     "query": "在美团上搜索万象前海牛排家，帮我预定9月3日晚上九点的五人包间，预定人小A先生",
-    "optimal_steps": 68,
+    "optimal_steps": 14,
     "app_num": 1,
     "milestone": [
       {
@@ -1798,7 +1798,7 @@
   {
     "task_id": 59,
     "query": "在美团上搜索万象前海牛排家，查看是否可以停车，并告知微信好友1",
-    "optimal_steps": 19,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -1825,7 +1825,7 @@
   {
     "task_id": 60,
     "query": "在美团上搜索万象前海牛排家，转发到朋友圈",
-    "optimal_steps": 10,
+    "optimal_steps": 8,
     "app_num": 2,
     "milestone": [
       {
@@ -1851,7 +1851,7 @@
   {
     "task_id": 61,
     "query": "我换新地址了：“中国华润大厦快递柜，小A，15191882309”，到京东（使用地址粘贴板），淘宝（使用智能粘贴）、OPPO应用商店（使用粘贴）、美团、拼多多帮我新增地址",
-    "optimal_steps": 9,
+    "optimal_steps": 68,
     "app_num": 5,
     "milestone": [
       {
@@ -1889,7 +1889,7 @@
   {
     "task_id": 62,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选收藏第一，记住店名，然后去美团、大众点评分别搜该店的两人套餐价格，将价格告诉微信好友1",
-    "optimal_steps": 15,
+    "optimal_steps": 24,
     "app_num": 4,
     "milestone": [
       {
@@ -1927,7 +1927,7 @@
   {
     "task_id": 63,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后生成分享图分享给微信好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -1960,7 +1960,7 @@
   {
     "task_id": 64,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后分享给微信好友群",
-    "optimal_steps": 8,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -1992,7 +1992,7 @@
   {
     "task_id": 65,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后选封面图搜同款，并将第一个内容转发到微博",
-    "optimal_steps": 8,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -2025,7 +2025,7 @@
   {
     "task_id": 66,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后选封面图搜同款，并收藏第一个内容",
-    "optimal_steps": 11,
+    "optimal_steps": 12,
     "app_num": 1,
     "milestone": [
       {
@@ -2058,7 +2058,7 @@
   {
     "task_id": 67,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后收藏",
-    "optimal_steps": 12,
+    "optimal_steps": 9,
     "app_num": 1,
     "milestone": [
       {
@@ -2084,7 +2084,7 @@
   {
     "task_id": 68,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后关注博主",
-    "optimal_steps": 12,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -2110,7 +2110,7 @@
   {
     "task_id": 69,
     "query": "帮我去小红书搜“南山区最好的火锅”，筛选并查看收藏第一，然后收藏并加入新建专辑“美食”",
-    "optimal_steps": 12,
+    "optimal_steps": 13,
     "app_num": 1,
     "milestone": [
       {
@@ -2143,7 +2143,7 @@
   {
     "task_id": 70,
     "query": "去美团搜索南山区汶和记，然后将其店铺相册中的第一张菜单图片保存，发给微信好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 17,
     "app_num": 2,
     "milestone": [
       {
@@ -2176,7 +2176,7 @@
   {
     "task_id": 71,
     "query": "去美团搜索南山区汶和记，然后囤一张100元代金券",
-    "optimal_steps": 12,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -2208,7 +2208,7 @@
   {
     "task_id": 72,
     "query": "去美团搜索南山区汶和记，查看地址，选择用高德地图导航过去",
-    "optimal_steps": 12,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -2240,7 +2240,7 @@
   {
     "task_id": 73,
     "query": "去美团搜索南山区汶和记，分享给QQ好友我的电脑",
-    "optimal_steps": 12,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -2272,7 +2272,7 @@
   {
     "task_id": 74,
     "query": "去美团搜索南山区汶和记，然后收藏",
-    "optimal_steps": 30,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -2292,7 +2292,7 @@
   {
     "task_id": 75,
     "query": "去美团搜索南山区汶和记，然后转发给微信好友1",
-    "optimal_steps": 15,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -2325,7 +2325,7 @@
   {
     "task_id": 76,
     "query": "去美团搜索南山区汶和记，然后转发到朋友圈",
-    "optimal_steps": 40,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -2345,7 +2345,7 @@
   {
     "task_id": 77,
     "query": "去小红书搜东线战线变化图，筛选点赞第一并保存它的图片，去WPS里的《东线战线变化》PPT新启一页，将图片插入并保存",
-    "optimal_steps": 36,
+    "optimal_steps": 30,
     "app_num": 2,
     "milestone": [
       {
@@ -2383,7 +2383,7 @@
   {
     "task_id": 78,
     "query": "将小红书和哔哩哔哩的自我介绍修改为“nice~happy~year~”",
-    "optimal_steps": 17,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -2405,7 +2405,7 @@
   {
     "task_id": 79,
     "query": "在小红书和哔哩哔哩添加新的收货地址和号码：cc 重庆仙桃数据谷元时空C02栋 18999663333",
-    "optimal_steps": 15,
+    "optimal_steps": 40,
     "app_num": 2,
     "milestone": [
       {
@@ -2425,7 +2425,7 @@
   {
     "task_id": 80,
     "query": "我想去九寨沟玩，帮我分别在高德（筛选距离最近）、微信酒店民宿、美团看看附近的酒店（第一家），看看谁最便宜",
-    "optimal_steps": 14,
+    "optimal_steps": 36,
     "app_num": 3,
     "milestone": [
       {
@@ -2489,7 +2489,7 @@
   {
     "task_id": 82,
     "query": "用小红书搜索能开发票的保洁公司靠谱吗，同时去58同城找到本地服务保洁清洗，筛选能开发票的日常家庭保洁",
-    "optimal_steps": 12,
+    "optimal_steps": 15,
     "app_num": 2,
     "milestone": [
       {
@@ -2515,7 +2515,7 @@
   {
     "task_id": 83,
     "query": "在小红书搜索好看的短剧推荐选择推荐第一名，然后去红果免费短剧搜索观看该短剧",
-    "optimal_steps": 12,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -2535,7 +2535,7 @@
   {
     "task_id": 84,
     "query": "使用淘宝和京东搜索nars，筛选销量第一，看谁的更便宜，把结果告诉微信好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 21,
     "app_num": 3,
     "milestone": [
       {
@@ -2567,7 +2567,7 @@
   {
     "task_id": 85,
     "query": "京东搜索nars，点击销量排序，将第一个复制链接分享给好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 16,
     "app_num": 2,
     "milestone": [
       {
@@ -2605,7 +2605,7 @@
   {
     "task_id": 86,
     "query": "京东搜索nars，点击销量排序，将第一个分享生成海报，然后发送给微信好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -2644,7 +2644,7 @@
   {
     "task_id": 87,
     "query": "京东搜索nars，点击销量排序，将第一个转发给微信好友1",
-    "optimal_steps": 12,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -2682,7 +2682,7 @@
   {
     "task_id": 88,
     "query": "京东搜索nars，点击销量排序，将第一个转发朋友圈",
-    "optimal_steps": 12,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -2708,7 +2708,7 @@
   {
     "task_id": 89,
     "query": "京东搜索nars，点击销量排序，将第一个转发微博",
-    "optimal_steps": 17,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -2748,7 +2748,7 @@
   {
     "task_id": 90,
     "query": "京东搜索nars，点击销量排序，将第一个转发QQ空间",
-    "optimal_steps": 16,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -2787,7 +2787,7 @@
   {
     "task_id": 91,
     "query": "京东搜索nars，点击销量排序，将第一个转发给QQ好友我的电脑",
-    "optimal_steps": 30,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -2826,7 +2826,7 @@
   {
     "task_id": 92,
     "query": "在小红书搜索下雨天素材并保存该视频，然后去快影将该素材（视频）导入使用一键出片功能，自动添加音乐",
-    "optimal_steps": 16,
+    "optimal_steps": 17,
     "app_num": 2,
     "milestone": [
       {
@@ -2864,7 +2864,7 @@
   {
     "task_id": 93,
     "query": "在小红书搜索一张汉堡图片，然后发给小布助手，让他把汉堡画成张嘴的汉堡包图片",
-    "optimal_steps": 19,
+    "optimal_steps": 16,
     "app_num": 2,
     "milestone": [
       {
@@ -2897,7 +2897,7 @@
   {
     "task_id": 94,
     "query": "帮我在美团外卖和淘宝闪购添加地址：元时空智能科技（重庆）有限公司，电话13008300025，用户周先生",
-    "optimal_steps": 17,
+    "optimal_steps": 30,
     "app_num": 2,
     "milestone": [
       {
@@ -2929,7 +2929,7 @@
   {
     "task_id": 95,
     "query": "帮我把美团我的收藏中的维也纳酒店分享给QQ小欧，说“这个酒店不错”，再从酒店链接查看酒店详情",
-    "optimal_steps": 22,
+    "optimal_steps": 16,
     "app_num": 2,
     "milestone": [
       {
@@ -2955,7 +2955,7 @@
   {
     "task_id": 96,
     "query": "在美团我的收藏找到维也纳酒店，然后查看地址，复制地址，然后去高德导航到酒店的最近位置，选择骑车。",
-    "optimal_steps": 23,
+    "optimal_steps": 19,
     "app_num": 2,
     "milestone": [
       {
@@ -2981,7 +2981,7 @@
   {
     "task_id": 97,
     "query": "在oppp商城和京东搜索OPPO折叠屏，购买地址选择公司元时空，看看两个平台哪天送达，并告知微信好友1",
-    "optimal_steps": 14,
+    "optimal_steps": 22,
     "app_num": 3,
     "milestone": [
       {
@@ -3007,7 +3007,7 @@
   {
     "task_id": 98,
     "query": "帮我在美团、京东、淘宝的外卖搜索生椰拿铁，找找谁点库迪咖啡的生椰拿铁送达时间较快？",
-    "optimal_steps": 12,
+    "optimal_steps": 22,
     "app_num": 3,
     "milestone": [
       {
@@ -3039,7 +3039,7 @@
   {
     "task_id": 99,
     "query": "去小红书搜索100元内最推荐的键盘，筛选图文，找到点赞超过6千的内容，保存照片去拼多多识别价格多少",
-    "optimal_steps": 10,
+    "optimal_steps": 23,
     "app_num": 2,
     "milestone": [
       {
@@ -3072,7 +3072,7 @@
   {
     "task_id": 100,
     "query": "去小红书搜索谐音梗图片，保存图片发给豆包，问他这个谐音梗答案是什么。",
-    "optimal_steps": 12,
+    "optimal_steps": 14,
     "app_num": 2,
     "milestone": [
       {
@@ -3098,7 +3098,7 @@
   {
     "task_id": 101,
     "query": "小红书搜索OPPO findx9上市时间，并告知微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -3118,7 +3118,7 @@
   {
     "task_id": 102,
     "query": "小红书搜索开学第一天，进入第一条内容，将博主主页转发给QQ好友我的电脑",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -3150,7 +3150,7 @@
   {
     "task_id": 103,
     "query": "去小红书查看我的心愿单里的鞋，然后去京东搜索该鞋并加入购物车",
-    "optimal_steps": 0,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -3176,7 +3176,7 @@
   {
     "task_id": 104,
     "query": "去小红书搜索王鹏LLM，将其第一条内容转发给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -3202,7 +3202,7 @@
   {
     "task_id": 105,
     "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -3235,7 +3235,7 @@
   {
     "task_id": 106,
     "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给QQ好友我的电脑",
-    "optimal_steps": 0,
+    "optimal_steps": 11,
     "app_num": 2,
     "milestone": [
       {
@@ -3268,7 +3268,7 @@
   {
     "task_id": 107,
     "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发给QQ空间",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3301,7 +3301,7 @@
   {
     "task_id": 108,
     "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发到朋友圈",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -3327,7 +3327,7 @@
   {
     "task_id": 109,
     "query": "去京东搜索DELUXE跑步鞋，先收藏，再转发到微博",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -3360,7 +3360,7 @@
   {
     "task_id": 110,
     "query": "美团搜索海底捞，进入其品牌主页，关注并转发给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -3393,7 +3393,7 @@
   {
     "task_id": 111,
     "query": "美团搜索海底捞，进入其品牌主页，关注并转发给QQ好友我的电脑",
-    "optimal_steps": 0,
+    "optimal_steps": 12,
     "app_num": 2,
     "milestone": [
       {
@@ -3426,7 +3426,7 @@
   {
     "task_id": 112,
     "query": "美团搜索海底捞，进入其品牌主页，关注并转发给QQ空间",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -3459,7 +3459,7 @@
   {
     "task_id": 113,
     "query": "美团搜索海底捞，进入其品牌主页，关注并转发给朋友圈",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -3492,7 +3492,7 @@
   {
     "task_id": 114,
     "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3525,7 +3525,7 @@
   {
     "task_id": 115,
     "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给QQ好友我的电脑",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3558,7 +3558,7 @@
   {
     "task_id": 116,
     "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给QQ空间",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 2,
     "milestone": [
       {
@@ -3591,7 +3591,7 @@
   {
     "task_id": 117,
     "query": "美团点击电影演出，查看热映的第一个电影，点击想看，然后转发给朋友圈",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 2,
     "milestone": [
       {
@@ -3624,7 +3624,7 @@
   {
     "task_id": 118,
     "query": "将美团休闲玩乐的按摩足疗第一个推荐分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3659,7 +3659,7 @@
   {
     "task_id": 119,
     "query": "将美团休闲玩乐的洗浴汗蒸，把第一个分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3693,7 +3693,7 @@
   {
     "task_id": 120,
     "query": "进入美团休闲玩乐KTV，把位置在前海的其中一个分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3728,7 +3728,7 @@
   {
     "task_id": 121,
     "query": "美团点击休闲玩乐，点击酒吧，把第一个分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3761,7 +3761,7 @@
   {
     "task_id": 122,
     "query": "美团点击休闲玩乐，点击网吧电竞，把第一个分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -3796,7 +3796,7 @@
   {
     "task_id": 123,
     "query": "我想在京东秒送买一双男鞋，100元内44码",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -3822,7 +3822,7 @@
   {
     "task_id": 124,
     "query": "帮我在京东外卖挑一个笔记本电脑，5000以内",
-    "optimal_steps": 11,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -3842,7 +3842,7 @@
   {
     "task_id": 125,
     "query": "帮我在京东外卖点一杯瑞幸的生椰拿铁",
-    "optimal_steps": 10,
+    "optimal_steps": 9,
     "app_num": 1,
     "milestone": [
       {
@@ -3882,7 +3882,7 @@
   {
     "task_id": 127,
     "query": "帮我在京东外卖查看附近3km的丽人美发团购",
-    "optimal_steps": 9,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -3902,7 +3902,7 @@
   {
     "task_id": 128,
     "query": "帮我在京东外卖买一个洗面奶，明天12:00~12:15送达",
-    "optimal_steps": 7,
+    "optimal_steps": 13,
     "app_num": 1,
     "milestone": [
       {
@@ -3934,7 +3934,7 @@
   {
     "task_id": 129,
     "query": "帮我在京东外卖挑一件白色连衣裙，120/56码",
-    "optimal_steps": 13,
+    "optimal_steps": 9,
     "app_num": 1,
     "milestone": [
       {
@@ -3960,7 +3960,7 @@
   {
     "task_id": 130,
     "query": "帮我在京东外卖看看附近5km做美甲的团购",
-    "optimal_steps": 7,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -3986,7 +3986,7 @@
   {
     "task_id": 131,
     "query": "帮我在京东外卖买两个藿香正气水，今天18点之后送达",
-    "optimal_steps": 9,
+    "optimal_steps": 11,
     "app_num": 1,
     "milestone": [
       {
@@ -4019,7 +4019,7 @@
   {
     "task_id": 132,
     "query": "帮我在京东外卖关注咖啡奶茶销量最高的店铺",
-    "optimal_steps": 7,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -4046,7 +4046,7 @@
   {
     "task_id": 133,
     "query": "去京东外卖搜索超市，筛选距离最近的超市，搜索里面的洗脸巾和牙刷并加入购物车",
-    "optimal_steps": 8,
+    "optimal_steps": 16,
     "app_num": 1,
     "milestone": [
       {
@@ -4122,7 +4122,7 @@
   {
     "task_id": 135,
     "query": "使用小红书搜索“制作双皮奶的教程”笔记并点赞第一篇笔记",
-    "optimal_steps": 8,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4142,7 +4142,7 @@
   {
     "task_id": 136,
     "query": "使用小红书搜索博主“一枝南南”并关注",
-    "optimal_steps": 16,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4164,7 +4164,7 @@
   {
     "task_id": 137,
     "query": "查看我的小红书全部订单",
-    "optimal_steps": 11,
+    "optimal_steps": 9,
     "app_num": 1,
     "milestone": [
       {
@@ -4190,7 +4190,7 @@
   {
     "task_id": 138,
     "query": "去小红书群聊广场，查看黄山攻略并加入群聊",
-    "optimal_steps": 7,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4211,7 +4211,7 @@
   {
     "task_id": 139,
     "query": "使用小红书搜索家装攻略并点赞最新的第一篇笔记",
-    "optimal_steps": 7,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -4237,7 +4237,7 @@
   {
     "task_id": 140,
     "query": "清理小红书缓存",
-    "optimal_steps": 4,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4257,7 +4257,7 @@
   {
     "task_id": 141,
     "query": "小红书搜索'关晓彤 你的兵来了'点赞第一篇笔记",
-    "optimal_steps": 9,
+    "optimal_steps": 8,
     "app_num": 1,
     "milestone": [
       {
@@ -4277,7 +4277,7 @@
   {
     "task_id": 142,
     "query": "小红书搜索汗疱疹怎么去除并查看第一篇笔记",
-    "optimal_steps": 4,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4297,7 +4297,7 @@
   {
     "task_id": 143,
     "query": "查看小红书搜索历史，并清除全部搜索历史记录",
-    "optimal_steps": 8,
+    "optimal_steps": 11,
     "app_num": 1,
     "milestone": [
       {
@@ -4317,7 +4317,7 @@
   {
     "task_id": 144,
     "query": "小红书搜索短剧宫女扶摇录，并找到第一集分享到微信朋友圈，配文“好看 ~”",
-    "optimal_steps": 5,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -4369,7 +4369,7 @@
   {
     "task_id": 146,
     "query": "看看美团KTV里面的魅KTV（前海卓越店）第一个可预订套餐的价格，告诉微信好友1",
-    "optimal_steps": 7,
+    "optimal_steps": 9,
     "app_num": 2,
     "milestone": [
       {
@@ -4409,7 +4409,7 @@
   {
     "task_id": 148,
     "query": "查看我的微信二维码",
-    "optimal_steps": 7,
+    "optimal_steps": 4,
     "app_num": 1,
     "milestone": [
       {
@@ -4424,7 +4424,7 @@
   {
     "task_id": 149,
     "query": "查看我的微信头像（大图）",
-    "optimal_steps": 11,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4439,7 +4439,7 @@
   {
     "task_id": 150,
     "query": "去美团APP，去外卖搜索优购哆生活超市，查看搜索结果第一家的配送时间是多少，告诉微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 2,
     "milestone": [
       {
@@ -4465,7 +4465,7 @@
   {
     "task_id": 151,
     "query": "给微信好友1打语音电话",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4479,7 +4479,7 @@
   {
     "task_id": 152,
     "query": "查看美团附近自提点",
-    "optimal_steps": 0,
+    "optimal_steps": 4,
     "app_num": 1,
     "milestone": [
       {
@@ -4493,7 +4493,7 @@
   {
     "task_id": 153,
     "query": "查看我美团的收货地址",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4507,7 +4507,7 @@
   {
     "task_id": 154,
     "query": "删除美团历史常用地点中的桂湾地铁站",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4527,7 +4527,7 @@
   {
     "task_id": 155,
     "query": "修改美团定位为杭州",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4541,7 +4541,7 @@
   {
     "task_id": 156,
     "query": "从美团团购的饮品小吃中购买古茗青柠水",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4561,7 +4561,7 @@
   {
     "task_id": 157,
     "query": "按距离最近筛选美团团购的推荐内容",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4581,7 +4581,7 @@
   {
     "task_id": 158,
     "query": "筛选美团团购距离1km以内的推荐",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4601,7 +4601,7 @@
   {
     "task_id": 159,
     "query": "筛选美团团购可用神券的推荐",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4621,7 +4621,7 @@
   {
     "task_id": 160,
     "query": "查看美团团购的全部订单",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4641,7 +4641,7 @@
   {
     "task_id": 161,
     "query": "购买城市英雄68个游戏币的美团团购券",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4667,7 +4667,7 @@
   {
     "task_id": 162,
     "query": "进入美团病买药口腔看牙的第一个推荐",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4693,7 +4693,7 @@
   {
     "task_id": 163,
     "query": "开启美团的长辈模式，并查看通用",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4720,7 +4720,7 @@
   {
     "task_id": 164,
     "query": "开启美团的长辈模式，并查看账号与安全",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4746,7 +4746,7 @@
   {
     "task_id": 165,
     "query": "开启美团的长辈模式，并查看客服",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4772,7 +4772,7 @@
   {
     "task_id": 166,
     "query": "开启美团的长辈模式，并查看个人信息",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4798,7 +4798,7 @@
   {
     "task_id": 167,
     "query": "设置微信状态为美滋滋",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4812,7 +4812,7 @@
   {
     "task_id": 168,
     "query": "到小红书发表一篇文字笔记，内容是“大家每天都是怎么积极面对生活的呢 ~”，标题为nice",
-    "optimal_steps": 0,
+    "optimal_steps": 10,
     "app_num": 1,
     "milestone": [
       {
@@ -4839,7 +4839,7 @@
   {
     "task_id": 169,
     "query": "清空美团历史浏览记录",
-    "optimal_steps": 0,
+    "optimal_steps": 4,
     "app_num": 1,
     "milestone": [
       {
@@ -4853,7 +4853,7 @@
   {
     "task_id": 170,
     "query": "到美团我的关注中，先取消美团蜜雪冰城关注，重新关注",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4879,7 +4879,7 @@
   {
     "task_id": 171,
     "query": "京东特价搜索笔记本内存条，查看第一个产品，查看单品购买16GB的价格",
-    "optimal_steps": 0,
+    "optimal_steps": 5,
     "app_num": 1,
     "milestone": [
       {
@@ -4905,7 +4905,7 @@
   {
     "task_id": 172,
     "query": "清理美团缓存",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
@@ -4925,7 +4925,7 @@
   {
     "task_id": 173,
     "query": "将微信拍一拍设置为“你好”",
-    "optimal_steps": 0,
+    "optimal_steps": 7,
     "app_num": 1,
     "milestone": [
       {
@@ -4945,7 +4945,7 @@
   {
     "task_id": 174,
     "query": "小红书搜索OPPOFINDX9外观，筛选最新，将第一条分享给微信好友1",
-    "optimal_steps": 0,
+    "optimal_steps": 13,
     "app_num": 2,
     "milestone": [
       {
@@ -4978,7 +4978,7 @@
   {
     "task_id": 175,
     "query": "京东查看我的会员中心，然后开通PLUS年卡",
-    "optimal_steps": 0,
+    "optimal_steps": 6,
     "app_num": 1,
     "milestone": [
       {
